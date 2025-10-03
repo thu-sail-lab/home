@@ -33,6 +33,7 @@ class Navigation {
         if (this.mobileMenuBtn) {
             this.mobileMenuBtn.addEventListener('click', () => {
                 this.mobileNav.classList.toggle('active');
+                document.body.classList.toggle('mobile-nav-open');
                 const icon = this.mobileMenuBtn.querySelector('i');
                 if (this.mobileNav.classList.contains('active')) {
                     icon.className = 'fas fa-times';
@@ -55,6 +56,7 @@ class Navigation {
                     // Close mobile menu if open
                     if (this.mobileNav.classList.contains('active')) {
                         this.mobileNav.classList.remove('active');
+                        document.body.classList.remove('mobile-nav-open');
                         const icon = this.mobileMenuBtn.querySelector('i');
                         icon.className = 'fas fa-bars';
                     }

@@ -32,6 +32,10 @@ body {
     overflow-x: hidden;
 }
 
+body.mobile-nav-open {
+    overflow: hidden;
+}
+
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
@@ -142,9 +146,12 @@ p {
     top: 80px;
     left: 0;
     width: 100%;
+    height: calc(100vh - 80px);
     background: white;
     border-bottom: 1px solid var(--border-color);
     box-shadow: var(--shadow-lg);
+    z-index: 9999;
+    overflow-y: auto;
 }
 
 .mobile-nav.active {
@@ -156,6 +163,7 @@ p {
     flex-direction: column;
     padding: 1rem 2rem;
     gap: 1rem;
+    background: white;
 }
 
 /* Hero Section */
