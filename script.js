@@ -138,13 +138,238 @@ class Navigation {
     }
 
     addPageAnimations(page) {
-        const animatableElements = page.querySelectorAll('.card, .member-card, .partner-card, .contact-card');
-        animatableElements.forEach((el, index) => {
-            el.classList.remove('fade-in');
+        // Remove any existing animation classes first
+        this.resetPageAnimations(page);
+
+        // Get page type for specific animations
+        const pageId = page.id;
+
+        // Hero section animation
+        const heroContainer = page.querySelector('.hero-container');
+        if (heroContainer) {
+            heroContainer.classList.add('animate-on-enter');
             setTimeout(() => {
-                el.classList.add('fade-in');
-            }, index * 100);
+                heroContainer.classList.add('visible');
+            }, 100);
+        }
+
+        // Section headers animation
+        const sectionHeaders = page.querySelectorAll('.section-header');
+        sectionHeaders.forEach((header, index) => {
+            header.classList.add('animate-on-enter');
+            setTimeout(() => {
+                header.classList.add('visible');
+            }, 200 + (index * 150));
         });
+
+        // Page-specific animations
+        switch(pageId) {
+            case 'publications':
+                this.animatePublicationsPage(page);
+                break;
+            case 'team':
+                this.animateTeamPage(page);
+                break;
+            case 'research':
+                this.animateResearchPage(page);
+                break;
+            case 'partners':
+                this.animatePartnersPage(page);
+                break;
+            case 'contact':
+                this.animateContactPage(page);
+                break;
+            case 'home':
+                this.animateHomePage(page);
+                break;
+        }
+
+        // Special sections that can appear on multiple pages
+        this.animateSpecialSections(page);
+    }
+
+    resetPageAnimations(page) {
+        // Remove animation classes from all elements
+        const animatedElements = page.querySelectorAll('.animate-on-enter, .visible');
+        animatedElements.forEach(el => {
+            el.classList.remove('animate-on-enter', 'visible', 'fade-in', 'scale-in', 'fade-in-left', 'fade-in-right');
+        });
+    }
+
+    animatePublicationsPage(page) {
+        // Publication filter buttons
+        const filterButtons = page.querySelectorAll('.publication-filter');
+        filterButtons.forEach((button, index) => {
+            button.classList.add('animate-on-enter');
+            setTimeout(() => {
+                button.classList.add('visible');
+            }, 300 + (index * 50));
+        });
+
+        // Publication items with staggered animation
+        const publicationItems = page.querySelectorAll('.publication-item');
+        publicationItems.forEach((item, index) => {
+            item.classList.add('animate-on-enter');
+            setTimeout(() => {
+                item.classList.add('visible');
+            }, 400 + (index * 100));
+        });
+
+        // Year headers
+        const yearHeaders = page.querySelectorAll('h3[style*="position: relative"]');
+        yearHeaders.forEach((header, index) => {
+            header.classList.add('publication-year-header', 'animate-on-enter');
+            setTimeout(() => {
+                header.classList.add('visible');
+            }, 350 + (index * 200));
+        });
+
+        // Stats section
+        const statsSection = page.querySelector('.stats-section');
+        if (statsSection) {
+            statsSection.classList.add('animate-on-enter');
+            setTimeout(() => {
+                statsSection.classList.add('visible');
+            }, 600);
+        }
+    }
+
+    animateTeamPage(page) {
+        // Principal investigator (special animation)
+        const principalSection = page.querySelector('.principal-section');
+        if (principalSection) {
+            principalSection.classList.add('animate-on-enter');
+            setTimeout(() => {
+                principalSection.classList.add('visible');
+            }, 300);
+        }
+
+        // Team member cards
+        const memberCards = page.querySelectorAll('.member-card');
+        memberCards.forEach((card, index) => {
+            card.classList.add('animate-on-enter');
+            setTimeout(() => {
+                card.classList.add('visible');
+            }, 500 + (index * 150));
+        });
+
+        // CTA sections
+        const ctaSections = page.querySelectorAll('[style*="background: linear-gradient(135deg, #2563eb"]');
+        ctaSections.forEach((section, index) => {
+            section.classList.add('animate-on-enter');
+            setTimeout(() => {
+                section.classList.add('visible');
+            }, 800 + (index * 200));
+        });
+    }
+
+    animateResearchPage(page) {
+        // Research cards
+        const researchCards = page.querySelectorAll('.card');
+        researchCards.forEach((card, index) => {
+            card.classList.add('animate-on-enter');
+            setTimeout(() => {
+                card.classList.add('visible');
+            }, 300 + (index * 120));
+        });
+    }
+
+    animatePartnersPage(page) {
+        // Partner cards
+        const partnerCards = page.querySelectorAll('.partner-card');
+        partnerCards.forEach((card, index) => {
+            card.classList.add('animate-on-enter');
+            setTimeout(() => {
+                card.classList.add('visible');
+            }, 300 + (index * 100));
+        });
+
+        // Partner slider
+        const partnerSlider = page.querySelector('.partners-slider-container');
+        if (partnerSlider) {
+            partnerSlider.classList.add('animate-on-enter');
+            setTimeout(() => {
+                partnerSlider.classList.add('visible');
+            }, 600);
+        }
+    }
+
+    animateContactPage(page) {
+        // Contact cards
+        const contactCards = page.querySelectorAll('.contact-card');
+        contactCards.forEach((card, index) => {
+            card.classList.add('animate-on-enter');
+            setTimeout(() => {
+                card.classList.add('visible');
+            }, 300 + (index * 150));
+        });
+    }
+
+    animateHomePage(page) {
+        // Home page cards
+        const homeCards = page.querySelectorAll('.card');
+        homeCards.forEach((card, index) => {
+            card.classList.add('animate-on-enter');
+            setTimeout(() => {
+                card.classList.add('visible');
+            }, 300 + (index * 120));
+        });
+
+        // Stats section
+        const statsSection = page.querySelector('.stats-section');
+        if (statsSection) {
+            statsSection.classList.add('animate-on-enter');
+            setTimeout(() => {
+                statsSection.classList.add('visible');
+            }, 500);
+        }
+
+        // Recent publications on home
+        const recentPublications = page.querySelectorAll('.publication-item');
+        recentPublications.forEach((item, index) => {
+            item.classList.add('animate-on-enter');
+            setTimeout(() => {
+                item.classList.add('visible');
+            }, 400 + (index * 80));
+        });
+    }
+
+    animateSpecialSections(page) {
+        // Research impact section
+        const researchImpactSection = page.querySelector('.research-impact-section');
+        if (researchImpactSection) {
+            researchImpactSection.classList.add('animate-on-enter');
+            setTimeout(() => {
+                researchImpactSection.classList.add('visible');
+            }, 500);
+        }
+
+        // Key venues section
+        const keyVenuesSection = page.querySelector('.key-venues-section');
+        if (keyVenuesSection) {
+            keyVenuesSection.classList.add('animate-on-enter');
+            setTimeout(() => {
+                keyVenuesSection.classList.add('visible');
+            }, 600);
+        }
+
+        // Venue cards
+        const venueCards = page.querySelectorAll('.venue-card');
+        venueCards.forEach((card, index) => {
+            card.classList.add('animate-on-enter');
+            setTimeout(() => {
+                card.classList.add('visible');
+            }, 700 + (index * 100));
+        });
+
+        // Floating contact button
+        const floatingContact = document.querySelector('.floating-contact');
+        if (floatingContact) {
+            floatingContact.classList.add('animate-on-enter');
+            setTimeout(() => {
+                floatingContact.classList.add('visible');
+            }, 1000);
+        }
     }
 }
 
