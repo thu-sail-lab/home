@@ -49,6 +49,7 @@
                 <li><a href="#" data-page="publications">Publications</a></li>
                 <li><a href="#" data-page="team">Team</a></li>
                 <li><a href="#" data-page="partners">Partners</a></li>
+                <li><a href="#" data-page="opensource">Open Source</a></li>
                 <li><a href="#" data-page="contact">Contact</a></li>
             </ul>
             <button class="mobile-menu-btn">
@@ -65,6 +66,7 @@
             <a href="#" data-page="publications">Publications</a>
             <a href="#" data-page="team">Team</a>
             <a href="#" data-page="partners">Partners</a>
+            <a href="#" data-page="opensource">Open Source</a>
             <a href="#" data-page="contact">Contact</a>
         </div>
     </div>
@@ -187,6 +189,176 @@
             </div>
         </section>
 
+        <!-- News Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-newspaper"></i> Lab News</h2>
+                    <p>Latest announcements and updates from our research lab</p>
+                </div>
+
+                <!-- Recent News (Always Visible) -->
+                <div class="news-container">
+                    <div class="news-recent">
+                        <!-- News Item 1 -->
+                        <div class="news-item">
+                            <div class="news-date">
+                                <span class="news-month">Jan</span>
+                                <span class="news-day">15</span>
+                                <span class="news-year">2025</span>
+                            </div>
+                            <div class="news-content">
+                                <div class="news-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="news-text">
+                                    <h4>Best Paper Award at AAAI 2025</h4>
+                                    <p>Our paper on "Multi-Agent Causal Discovery using Large Language Models" received the Best Paper Award at AAAI 2025.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- News Item 2 -->
+                        <div class="news-item">
+                            <div class="news-date">
+                                <span class="news-month">Dec</span>
+                                <span class="news-day">20</span>
+                                <span class="news-year">2024</span>
+                            </div>
+                            <div class="news-content">
+                                <div class="news-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="news-text">
+                                    <h4>New PhD Students Join Our Lab</h4>
+                                    <p>We welcome three new PhD students specializing in causal inference, deep learning, and time series analysis.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- News Item 3 -->
+                        <div class="news-item">
+                            <div class="news-date">
+                                <span class="news-month">Nov</span>
+                                <span class="news-day">28</span>
+                                <span class="news-year">2024</span>
+                            </div>
+                            <div class="news-content">
+                                <div class="news-icon">
+                                    <i class="fas fa-microscope"></i>
+                                </div>
+                                <div class="news-text">
+                                    <h4>New Research Grant from NSF</h4>
+                                    <p>Awarded $2.5M NSF grant for research on "Explainable AI for Industrial Systems Monitoring and Anomaly Detection".</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- News Item 4 -->
+                        <div class="news-item">
+                            <div class="news-date">
+                                <span class="news-month">Nov</span>
+                                <span class="news-day">12</span>
+                                <span class="news-year">2024</span>
+                            </div>
+                            <div class="news-content">
+                                <div class="news-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="news-text">
+                                    <h4>Industry Partnership with Tesla</h4>
+                                    <p>Established new collaboration with Tesla for advanced manufacturing quality control using AI-driven anomaly detection.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- News Item 5 -->
+                        <div class="news-item">
+                            <div class="news-date">
+                                <span class="news-month">Oct</span>
+                                <span class="news-day">15</span>
+                                <span class="news-year">2024</span>
+                            </div>
+                            <div class="news-content">
+                                <div class="news-icon">
+                                    <i class="fas fa-book-open"></i>
+                                </div>
+                                <div class="news-text">
+                                    <h4>5 Papers Accepted at Top Venues</h4>
+                                    <p>Five research papers accepted at NeurIPS 2024, ICLR 2025, and IEEE TASE, showcasing our advances in ML and AI.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Toggle Button -->
+                    <div class="news-toggle-container">
+                        <button id="news-toggle-btn" class="btn btn-secondary news-toggle-btn">
+                            <i class="fas fa-chevron-down"></i>
+                            Show Past Announcements
+                        </button>
+                    </div>
+
+                    <!-- Past News (Initially Hidden) -->
+                    <div id="news-past" class="news-past" style="display: none;">
+                        <!-- News Item 6 -->
+                        <div class="news-item">
+                            <div class="news-date">
+                                <span class="news-month">Sep</span>
+                                <span class="news-day">30</span>
+                                <span class="news-year">2024</span>
+                            </div>
+                            <div class="news-content">
+                                <div class="news-icon">
+                                    <i class="fas fa-medal"></i>
+                                </div>
+                                <div class="news-text">
+                                    <h4>Student Award at ICML 2024</h4>
+                                    <p>PhD student Hao Duong Le wins Outstanding Student Paper Award at ICML 2024 for work on causal discovery.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- News Item 7 -->
+                        <div class="news-item">
+                            <div class="news-date">
+                                <span class="news-month">Aug</span>
+                                <span class="news-day">20</span>
+                                <span class="news-year">2024</span>
+                            </div>
+                            <div class="news-content">
+                                <div class="news-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div class="news-text">
+                                    <h4>International Conference Presentation</h4>
+                                    <p>Prof. Chen Zhang delivered keynote speech on "Future of AI in Industrial Applications" at AI Summit Singapore.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- News Item 8 -->
+                        <div class="news-item">
+                            <div class="news-date">
+                                <span class="news-month">Jul</span>
+                                <span class="news-day">08</span>
+                                <span class="news-year">2024</span>
+                            </div>
+                            <div class="news-content">
+                                <div class="news-icon">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <div class="news-text">
+                                    <h4>Open Source Software Release</h4>
+                                    <p>Released XTRAFFIC dataset and analysis tools for traffic and incident correlation research to the open source community.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Recent Publications -->
         <section class="section">
             <div class="container">
@@ -202,8 +374,8 @@
                     <div class="publication-item" style="padding: 1.2rem; border-radius: 10px; height: 200px; display: flex; flex-direction: column;">
                         <div class="publication-vertical-content" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0;">
                             <div style="flex-shrink: 0;">
-                                <div class="publication-title" style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Multi-agent causal discovery using large language models</div>
-                                <div class="publication-authors" style="color: var(--text-secondary); margin-bottom: 0.4rem; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Hao Duong Le, Xin Xia, Zhang Chen</div>
+                                <div class="publication-title" style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Multi-agent causal discovery using large language models</div>
+                                <div class="publication-authors" style="color: var(--text-secondary); margin-bottom: 0.4rem; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Hao Duong Le, Xin Xia, Zhang Chen</div>
                                 <div class="publication-venue" style="color: var(--accent-color); font-weight: 500; margin-bottom: 0.6rem; font-size: 0.8rem;">2024 arXiv preprint</div>
                             </div>
                             <div class="publication-meta-row" style="flex-shrink: 0;">
@@ -219,8 +391,8 @@
                     <div class="publication-item" style="padding: 1.2rem; border-radius: 10px; height: 200px; display: flex; flex-direction: column;">
                         <div class="publication-vertical-content" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0;">
                             <div style="flex-shrink: 0;">
-                                <div class="publication-title" style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Addressing Glaucoma Structure-Function Relationship: A Multi-Task Learning Framework</div>
-                                <div class="publication-authors" style="color: var(--text-secondary); margin-bottom: 0.4rem; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Xuming An, Jacqueline Chua, Yujin Wang, et al.</div>
+                                <div class="publication-title" style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Addressing Glaucoma Structure-Function Relationship: A Multi-Task Learning Framework</div>
+                                <div class="publication-authors" style="color: var(--text-secondary); margin-bottom: 0.4rem; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Xuming An, Jacqueline Chua, Yujin Wang, et al.</div>
                                 <div class="publication-venue" style="color: var(--accent-color); font-weight: 500; margin-bottom: 0.6rem; font-size: 0.8rem;">2025 IEEE Trans. Medical Imaging</div>
                             </div>
                             <div class="publication-meta-row" style="flex-shrink: 0;">
@@ -236,8 +408,8 @@
                     <div class="publication-item" style="padding: 1.2rem; border-radius: 10px; height: 200px; display: flex; flex-direction: column;">
                         <div class="publication-vertical-content" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0;">
                             <div style="flex-shrink: 0;">
-                                <div class="publication-title" style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Quickest Causal Change Point Detection by Adaptive Intervention</div>
-                                <div class="publication-authors" style="color: var(--text-secondary); margin-bottom: 0.4rem; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Haijie Xu, Chen Zhang</div>
+                                <div class="publication-title" style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Quickest Causal Change Point Detection by Adaptive Intervention</div>
+                                <div class="publication-authors" style="color: var(--text-secondary); margin-bottom: 0.4rem; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Haijie Xu, Chen Zhang</div>
                                 <div class="publication-venue" style="color: var(--accent-color); font-weight: 500; margin-bottom: 0.6rem; font-size: 0.8rem;">2025 arXiv preprint</div>
                             </div>
                             <div class="publication-meta-row" style="flex-shrink: 0;">
@@ -253,8 +425,8 @@
                     <div class="publication-item" style="padding: 1.2rem; border-radius: 10px; height: 200px; display: flex; flex-direction: column;">
                         <div class="publication-vertical-content" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0;">
                             <div style="flex-shrink: 0;">
-                                <div class="publication-title" style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Low-rank robust subspace tensor clustering for metro passenger flow modeling</div>
-                                <div class="publication-authors" style="color: var(--text-secondary); margin-bottom: 0.4rem; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Nurretin Dorukhan Sergin, Jiuyun Hu, Ziyue Li, Chen Zhang, et al.</div>
+                                <div class="publication-title" style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Low-rank robust subspace tensor clustering for metro passenger flow modeling</div>
+                                <div class="publication-authors" style="color: var(--text-secondary); margin-bottom: 0.4rem; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Nurretin Dorukhan Sergin, Jiuyun Hu, Ziyue Li, Chen Zhang, et al.</div>
                                 <div class="publication-venue" style="color: var(--accent-color); font-weight: 500; margin-bottom: 0.6rem; font-size: 0.8rem;">2025 INFORMS Journal on Data Science</div>
                             </div>
                             <div class="publication-meta-row" style="flex-shrink: 0;">
@@ -269,7 +441,7 @@
                     <!-- Publication 5 -->
                     <div class="publication-item" style="padding: 1.2rem; border-radius: 10px; height: 200px; display: flex; flex-direction: column; justify-content: space-between;">
                         <div class="publication-vertical-content">
-                            <div class="publication-title" style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">AXIS: Explainable Time Series Anomaly Detection with Large Language Models</div>
+                            <div class="publication-title" style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">AXIS: Explainable Time Series Anomaly Detection with Large Language Models</div>
                             <div class="publication-authors" style="color: var(--text-secondary); margin-bottom: 0.4rem; font-size: 0.85rem;">Tian Lan, Hao Duong Le, Jinbo Li, et al.</div>
                             <div class="publication-venue" style="color: var(--accent-color); font-weight: 500; margin-bottom: 0.8rem; font-size: 0.8rem;">2025 arXiv preprint</div>
                             <div class="publication-meta-row">
@@ -284,7 +456,7 @@
                     <!-- Publication 6 -->
                     <div class="publication-item" style="padding: 1.2rem; border-radius: 10px; height: 200px; display: flex; flex-direction: column; justify-content: space-between;">
                         <div class="publication-vertical-content">
-                            <div class="publication-title" style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Bilevel joint optimization for product design changes with resilient supply chain</div>
+                            <div class="publication-title" style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Bilevel joint optimization for product design changes with resilient supply chain</div>
                             <div class="publication-authors" style="color: var(--text-secondary); margin-bottom: 0.4rem; font-size: 0.85rem;">Yujie Ma, Xin Xia, Yao Pei, Chen Zhang</div>
                             <div class="publication-venue" style="color: var(--accent-color); font-weight: 500; margin-bottom: 0.8rem; font-size: 0.8rem;">2025 Int'l Journal of Production Economics</div>
                             <div class="publication-meta-row">
@@ -440,7 +612,7 @@
                         </p>
                     </div>
 
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 320px)); gap: 1.5rem; margin-bottom: 3rem; justify-content: center; max-width: 1000px; margin-left: auto; margin-right: auto;">
+                    <div class="cta-cards-container">
                         <div class="cta-card">
                             <i class="fas fa-graduation-cap" style="font-size: 3rem; color: var(--accent-blue); margin-bottom: 1rem;"></i>
                             <h4 style="color: var(--text-primary); margin-bottom: 1rem;">Join Our Team</h4>
@@ -470,6 +642,16 @@
                                 Read Papers
                             </a>
                         </div>
+
+                        <div class="cta-card">
+                            <i class="fab fa-github" style="font-size: 3rem; color: var(--accent-blue); margin-bottom: 1rem;"></i>
+                            <h4 style="color: var(--text-primary); margin-bottom: 1rem;">Open Source Code</h4>
+                            <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Explore our research implementations and contribute to our projects</p>
+                            <a href="#" class="btn btn-primary" data-page="opensource">
+                                <i class="fab fa-github"></i>
+                                View Code
+                            </a>
+                        </div>
                     </div>
 
                     <!-- Quick Links -->
@@ -479,14 +661,17 @@
                             <a href="#" data-page="research" class="quick-nav-link">
                                 <i class="fas fa-flask"></i> Research Areas
                             </a>
-                            <a href="#" data-page="team" class="quick-nav-link">
-                                <i class="fas fa-users"></i> Meet the Team
-                            </a>
                             <a href="#" data-page="publications" class="quick-nav-link">
                                 <i class="fas fa-file-alt"></i> Publications
                             </a>
+                            <a href="#" data-page="team" class="quick-nav-link">
+                                <i class="fas fa-users"></i> Meet the Team
+                            </a>
                             <a href="#" data-page="partners" class="quick-nav-link">
                                 <i class="fas fa-handshake"></i> Partners
+                            </a>
+                            <a href="#" data-page="opensource" class="quick-nav-link">
+                                <i class="fab fa-github"></i> Open Source
                             </a>
                             <a href="#" data-page="contact" class="quick-nav-link">
                                 <i class="fas fa-envelope"></i> Contact Us
@@ -610,8 +795,8 @@
                     <div class="publication-item" style="padding: 1.2rem; border-radius: 10px; height: 200px; display: flex; flex-direction: column;">
                         <div class="publication-vertical-content" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0;">
                             <div style="flex-shrink: 0;">
-                                <div class="publication-title" style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Multi-agent causal discovery using large language models</div>
-                                <div class="publication-authors" style="color: var(--text-secondary); margin-bottom: 0.4rem; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Hao Duong Le, Xin Xia, Zhang Chen</div>
+                                <div class="publication-title" style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Multi-agent causal discovery using large language models</div>
+                                <div class="publication-authors" style="color: var(--text-secondary); margin-bottom: 0.4rem; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Hao Duong Le, Xin Xia, Zhang Chen</div>
                                 <div class="publication-venue" style="color: var(--accent-color); font-weight: 500; margin-bottom: 0.6rem; font-size: 0.8rem;">2024 arXiv preprint</div>
                             </div>
                             <div class="publication-meta-row" style="flex-shrink: 0;">
@@ -627,8 +812,8 @@
                     <div class="publication-item" style="padding: 1.2rem; border-radius: 10px; height: 200px; display: flex; flex-direction: column;">
                         <div class="publication-vertical-content" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0;">
                             <div style="flex-shrink: 0;">
-                                <div class="publication-title" style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Addressing Glaucoma Structure-Function Relationship: A Multi-Task Learning Framework</div>
-                                <div class="publication-authors" style="color: var(--text-secondary); margin-bottom: 0.4rem; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Xuming An, Jacqueline Chua, Yujin Wang, et al.</div>
+                                <div class="publication-title" style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Addressing Glaucoma Structure-Function Relationship: A Multi-Task Learning Framework</div>
+                                <div class="publication-authors" style="color: var(--text-secondary); margin-bottom: 0.4rem; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Xuming An, Jacqueline Chua, Yujin Wang, et al.</div>
                                 <div class="publication-venue" style="color: var(--accent-color); font-weight: 500; margin-bottom: 0.6rem; font-size: 0.8rem;">2025 IEEE Trans. Medical Imaging</div>
                             </div>
                             <div class="publication-meta-row" style="flex-shrink: 0;">
@@ -644,8 +829,8 @@
                     <div class="publication-item" style="padding: 1.2rem; border-radius: 10px; height: 200px; display: flex; flex-direction: column;">
                         <div class="publication-vertical-content" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0;">
                             <div style="flex-shrink: 0;">
-                                <div class="publication-title" style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Quickest Causal Change Point Detection by Adaptive Intervention</div>
-                                <div class="publication-authors" style="color: var(--text-secondary); margin-bottom: 0.4rem; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Haijie Xu, Chen Zhang</div>
+                                <div class="publication-title" style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Quickest Causal Change Point Detection by Adaptive Intervention</div>
+                                <div class="publication-authors" style="color: var(--text-secondary); margin-bottom: 0.4rem; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Haijie Xu, Chen Zhang</div>
                                 <div class="publication-venue" style="color: var(--accent-color); font-weight: 500; margin-bottom: 0.6rem; font-size: 0.8rem;">2025 arXiv preprint</div>
                             </div>
                             <div class="publication-meta-row" style="flex-shrink: 0;">
@@ -661,8 +846,8 @@
                     <div class="publication-item" style="padding: 1.2rem; border-radius: 10px; height: 200px; display: flex; flex-direction: column;">
                         <div class="publication-vertical-content" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0;">
                             <div style="flex-shrink: 0;">
-                                <div class="publication-title" style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Low-rank robust subspace tensor clustering for metro passenger flow modeling</div>
-                                <div class="publication-authors" style="color: var(--text-secondary); margin-bottom: 0.4rem; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Nurretin Dorukhan Sergin, Jiuyun Hu, Ziyue Li, Chen Zhang, et al.</div>
+                                <div class="publication-title" style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Low-rank robust subspace tensor clustering for metro passenger flow modeling</div>
+                                <div class="publication-authors" style="color: var(--text-secondary); margin-bottom: 0.4rem; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Nurretin Dorukhan Sergin, Jiuyun Hu, Ziyue Li, Chen Zhang, et al.</div>
                                 <div class="publication-venue" style="color: var(--accent-color); font-weight: 500; margin-bottom: 0.6rem; font-size: 0.8rem;">2025 INFORMS Journal on Data Science</div>
                             </div>
                             <div class="publication-meta-row" style="flex-shrink: 0;">
@@ -678,8 +863,8 @@
                     <div class="publication-item" style="padding: 1.2rem; border-radius: 10px; height: 200px; display: flex; flex-direction: column;">
                         <div class="publication-vertical-content" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0;">
                             <div style="flex-shrink: 0;">
-                                <div class="publication-title" style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">AXIS: Explainable Time Series Anomaly Detection with Large Language Models</div>
-                                <div class="publication-authors" style="color: var(--text-secondary); margin-bottom: 0.4rem; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Tian Lan, Hao Duong Le, Jinbo Li, et al.</div>
+                                <div class="publication-title" style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">AXIS: Explainable Time Series Anomaly Detection with Large Language Models</div>
+                                <div class="publication-authors" style="color: var(--text-secondary); margin-bottom: 0.4rem; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Tian Lan, Hao Duong Le, Jinbo Li, et al.</div>
                                 <div class="publication-venue" style="color: var(--accent-color); font-weight: 500; margin-bottom: 0.6rem; font-size: 0.8rem;">2025 arXiv preprint</div>
                             </div>
                             <div class="publication-meta-row" style="flex-shrink: 0;">
@@ -695,8 +880,8 @@
                     <div class="publication-item" style="padding: 1.2rem; border-radius: 10px; height: 200px; display: flex; flex-direction: column;">
                         <div class="publication-vertical-content" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0;">
                             <div style="flex-shrink: 0;">
-                                <div class="publication-title" style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Bilevel joint optimization for product design changes with resilient supply chain</div>
-                                <div class="publication-authors" style="color: var(--text-secondary); margin-bottom: 0.4rem; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Yujie Ma, Xin Xia, Yao Pei, Chen Zhang</div>
+                                <div class="publication-title" style="font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Bilevel joint optimization for product design changes with resilient supply chain</div>
+                                <div class="publication-authors" style="color: var(--text-secondary); margin-bottom: 0.4rem; font-size: 0.85rem; display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Yujie Ma, Xin Xia, Yao Pei, Chen Zhang</div>
                                 <div class="publication-venue" style="color: var(--accent-color); font-weight: 500; margin-bottom: 0.6rem; font-size: 0.8rem;">2025 Int'l Journal of Production Economics</div>
                             </div>
                             <div class="publication-meta-row" style="flex-shrink: 0;">
@@ -2440,6 +2625,95 @@
                     <h3 style="font-size: 2.5rem; margin-bottom: 1rem; color: white;">Ready to Make an Impact?</h3>
                     <p style="font-size: 1.2rem; margin-bottom: 2rem; color: rgba(255, 255, 255, 0.9);">Send your CV and research interests to join our team</p>
                     <a href="mailto:zhangchen01@tsinghua.edu.cn" class="btn" style="background: var(--bg-card); color: var(--accent-blue); border: 2px solid var(--border-secondary);">Email Us</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- OPEN SOURCE PAGE -->
+    <div id="opensource" class="page">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <h1>Open Source Projects</h1>
+                <p class="hero-subtitle">Explore our research implementations and contributions</p>
+                <p class="hero-description">
+                    Discover the code behind our cutting-edge research in artificial intelligence, machine learning, and industrial applications. All our projects are open source and available for the research community.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://github.com/thu-sail-lab" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-github"></i>
+                        Visit Our GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Repositories Section -->
+        <section class="section">
+            <div class="container">
+                <h2>Our Repositories</h2>
+                <p class="section-description">
+                    Browse through our open source projects, from research implementations to practical tools.
+                </p>
+
+                <!-- Loading State -->
+                <div id="repos-loading" class="loading-state">
+                    <div class="loading-spinner"></div>
+                    <p>Loading repositories...</p>
+                </div>
+
+                <!-- Error State -->
+                <div id="repos-error" class="error-state" style="display: none;">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p>Unable to load repositories. Please visit our <a href="https://github.com/thu-sail-lab" target="_blank">GitHub page</a> directly.</p>
+                </div>
+
+                <!-- Repositories Grid -->
+                <div id="repos-grid" class="repos-grid" style="display: none;">
+                    <!-- Repositories will be loaded here dynamically -->
+                </div>
+
+                <!-- Statistics Section -->
+                <div class="stats-section" style="margin-top: 4rem;">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3 id="total-repos">-</h3>
+                                <p>Total Repositories</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-code-branch"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3 id="total-forks">-</h3>
+                                <p>Total Forks</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3 id="total-stars">-</h3>
+                                <p>Total Stars</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="stat-content">
+                                <h3 id="total-languages">-</h3>
+                                <p>Languages Used</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

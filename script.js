@@ -179,6 +179,9 @@ class Navigation {
             case 'contact':
                 this.animateContactPage(page);
                 break;
+            case 'opensource':
+                this.animateOpenSourcePage(page);
+                break;
             case 'home':
                 this.animateHomePage(page);
                 break;
@@ -354,7 +357,7 @@ class Navigation {
         }
 
         // Venue cards
-        const venueCards = page.querySelectorAll('.venue-card');
+        const venueCards = page.querySelectorAll('.venue-cards');
         venueCards.forEach((card, index) => {
             card.classList.add('animate-on-enter');
             setTimeout(() => {
@@ -370,6 +373,26 @@ class Navigation {
                 floatingContact.classList.add('visible');
             }, 1000);
         }
+    }
+
+    animateOpenSourcePage(page) {
+        // Repository cards
+        const repoCards = page.querySelectorAll('.repo-card');
+        repoCards.forEach((card, index) => {
+            card.classList.add('animate-on-enter');
+            setTimeout(() => {
+                card.classList.add('visible');
+            }, 300 + (index * 150));
+        });
+
+        // Stats cards
+        const statCards = page.querySelectorAll('.stat-card');
+        statCards.forEach((card, index) => {
+            card.classList.add('animate-on-enter');
+            setTimeout(() => {
+                card.classList.add('visible');
+            }, 600 + (index * 100));
+        });
     }
 }
 
@@ -679,8 +702,10 @@ class SearchHandler {
         const pageNames = {
             'home': 'Home',
             'research': 'Research',
+            'publications': 'Publications',
             'team': 'Team',
             'partners': 'Partners',
+            'opensource': 'Open Source',
             'contact': 'Contact'
         };
         return pageNames[pageId] || pageId;
@@ -688,6 +713,69 @@ class SearchHandler {
 
     hideSearchResults() {
         this.searchResults.style.display = 'none';
+    }
+}
+
+// News Toggle Handler
+class NewsToggle {
+    constructor() {
+        this.toggleBtn = document.getElementById('news-toggle-btn');
+        this.pastNews = document.getElementById('news-past');
+        this.isExpanded = false;
+        this.init();
+    }
+
+    init() {
+        if (this.toggleBtn && this.pastNews) {
+            this.setupToggle();
+        }
+    }
+
+    setupToggle() {
+        this.toggleBtn.addEventListener('click', () => {
+            this.togglePastNews();
+        });
+    }
+
+    togglePastNews() {
+        this.isExpanded = !this.isExpanded;
+
+        if (this.isExpanded) {
+            this.showPastNews();
+        } else {
+            this.hidePastNews();
+        }
+    }
+
+    showPastNews() {
+        // Update button appearance
+        this.toggleBtn.classList.add('expanded');
+        this.toggleBtn.innerHTML = '<i class="fas fa-chevron-up"></i> Hide Past Announcements';
+
+        // Show past news with animation
+        this.pastNews.style.display = 'flex';
+
+        // Force reflow
+        this.pastNews.offsetHeight;
+
+        // Add show class for animation
+        this.pastNews.classList.add('show');
+    }
+
+    hidePastNews() {
+        // Update button appearance
+        this.toggleBtn.classList.remove('expanded');
+        this.toggleBtn.innerHTML = '<i class="fas fa-chevron-down"></i> Show Past Announcements';
+
+        // Remove show class
+        this.pastNews.classList.remove('show');
+
+        // Hide after animation completes
+        setTimeout(() => {
+            if (!this.isExpanded) {
+                this.pastNews.style.display = 'none';
+            }
+        }, 500);
     }
 }
 
@@ -723,6 +811,145 @@ class ThemeToggle {
     }
 }
 
+// GitHub Integration
+class GitHubIntegration {
+    constructor() {
+        this.orgName = 'thu-sail-lab';
+        this.apiBaseUrl = 'https://api.github.com';
+        this.reposContainer = document.getElementById('repos-grid');
+        this.loadingElement = document.getElementById('repos-loading');
+        this.errorElement = document.getElementById('repos-error');
+        this.repositories = [];
+        this.init();
+    }
+
+    init() {
+        if (this.reposContainer) {
+            this.fetchRepositories();
+        }
+    }
+
+    async fetchRepositories() {
+        try {
+            this.showLoading();
+
+            const response = await fetch(`${this.apiBaseUrl}/orgs/${this.orgName}/repos?sort=updated&direction=desc`);
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const repositories = await response.json();
+            this.repositories = repositories;
+
+            this.displayRepositories(repositories);
+            this.updateStatistics(repositories);
+            this.hideLoading();
+
+        } catch (error) {
+            console.error('Error fetching GitHub repositories:', error);
+            this.showError();
+        }
+    }
+
+    showLoading() {
+        if (this.loadingElement) this.loadingElement.style.display = 'flex';
+        if (this.errorElement) this.errorElement.style.display = 'none';
+        if (this.reposContainer) this.reposContainer.style.display = 'none';
+    }
+
+    hideLoading() {
+        if (this.loadingElement) this.loadingElement.style.display = 'none';
+        if (this.reposContainer) this.reposContainer.style.display = 'grid';
+    }
+
+    showError() {
+        if (this.loadingElement) this.loadingElement.style.display = 'none';
+        if (this.errorElement) this.errorElement.style.display = 'flex';
+        if (this.reposContainer) this.reposContainer.style.display = 'none';
+    }
+
+    displayRepositories(repositories) {
+        if (!this.reposContainer) return;
+
+        const repoCards = repositories.map(repo => this.createRepositoryCard(repo)).join('');
+        this.reposContainer.innerHTML = repoCards;
+    }
+
+    createRepositoryCard(repo) {
+        const description = repo.description ? `<p class="repo-description">${repo.description}</p>` : '';
+        const language = repo.language ? `<span class="repo-language" data-language="${repo.language.toLowerCase()}">${repo.language}</span>` : '';
+        const stars = repo.stargazers_count > 0 ? `<span class="repo-stat"><i class="fas fa-star"></i> ${repo.stargazers_count}</span>` : '';
+        const forks = repo.forks_count > 0 ? `<span class="repo-stat"><i class="fas fa-code-branch"></i> ${repo.forks_count}</span>` : '';
+        const lastUpdated = new Date(repo.updated_at).toLocaleDateString();
+
+        return `
+            <div class="repo-card" data-repo="${repo.name}">
+                <div class="repo-header">
+                    <h3 class="repo-name">
+                        <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            ${repo.name}
+                        </a>
+                    </h3>
+                    ${language}
+                </div>
+                ${description}
+                <div class="repo-stats">
+                    ${stars}
+                    ${forks}
+                    <span class="repo-updated">Updated ${lastUpdated}</span>
+                </div>
+                <div class="repo-actions">
+                    <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                        <i class="fas fa-external-link-alt"></i>
+                        View Code
+                    </a>
+                    ${repo.homepage ? `<a href="${repo.homepage}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        <i class="fas fa-globe"></i>
+                        Live Demo
+                    </a>` : ''}
+                </div>
+            </div>
+        `;
+    }
+
+    updateStatistics(repositories) {
+        const totalRepos = repositories.length;
+        const totalStars = repositories.reduce((sum, repo) => sum + repo.stargazers_count, 0);
+        const totalForks = repositories.reduce((sum, repo) => sum + repo.forks_count, 0);
+        const languages = [...new Set(repositories.filter(repo => repo.language).map(repo => repo.language))];
+
+        this.updateStatElement('total-repos', totalRepos);
+        this.updateStatElement('total-stars', totalStars);
+        this.updateStatElement('total-forks', totalForks);
+        this.updateStatElement('total-languages', languages.length);
+    }
+
+    updateStatElement(elementId, value) {
+        const element = document.getElementById(elementId);
+        if (element) {
+            // Animate the number counting up
+            const startValue = 0;
+            const duration = 1000;
+            const increment = value / (duration / 16);
+            let current = startValue;
+
+            const updateCounter = () => {
+                current += increment;
+                if (current < value) {
+                    element.textContent = Math.floor(current);
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    element.textContent = value;
+                }
+            };
+
+            setTimeout(updateCounter, 500); // Delay the animation slightly
+        }
+    }
+}
+
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize all components
@@ -731,7 +958,9 @@ document.addEventListener('DOMContentLoaded', () => {
     new PublicationsFilter();
     new ContactForm();
     new SearchHandler();
+    new NewsToggle();
     new ThemeToggle();
+    new GitHubIntegration();
 
     // Add smooth scrolling to all internal links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
