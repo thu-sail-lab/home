@@ -1,0 +1,21 @@
+{
+  "author_name": "Chen Zhang",
+  "affiliation": "Tsinghua University",
+  "google_scholar_id": "",
+  "backup_enabled": true,
+  "max_publications": 100,
+  "update_frequency": "weekly",
+  "last_update": "",
+  "settings": {
+    "use_proxy": true,
+    "delay_between_requests": 2,
+    "retry_attempts": 3,
+    "include_citations": true,
+    "include_abstracts": true
+  },
+  "filters": {
+    "min_year": 2010,
+    "exclude_keywords": [],
+    "include_only_venues": []
+  }
+}

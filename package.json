@@ -1,0 +1,40 @@
+{
+  "name": "sail-lab-website",
+  "version": "2.0.0",
+  "description": "SAIL Lab automated website management system",
+  "main": "index.html",
+  "scripts": {
+    "add-news": "python scripts/add_news.py",
+    "update-news": "python scripts/generate_news_html.py",
+    "update-publications": "python scripts/update_publications.py",
+    "fetch-publications": "python scripts/fetch_scholar_publications.py",
+    "process-publications": "python scripts/auto_process_publications.py",
+    "update-metrics": "python scripts/update_publication_metrics.py",
+    "backup": "python scripts/create_backup.py",
+    "preview": "python -m http.server 8000",
+    "help": "python scripts/show_help.py",
+    "status": "python scripts/system_status.py",
+    "install-deps": "pip install scholarly",
+    "validate": "python scripts/validate_data.py"
+  },
+  "keywords": [
+    "research",
+    "academic",
+    "website",
+    "automation",
+    "publications",
+    "google-scholar"
+  ],
+  "author": "SAIL Lab",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sail-lab/home/"
+  },
+  "engines": {
+    "python": ">=3.6"
+  },
+  "dependencies": {
+    "scholarly": "^1.7.11"
+  }
+}
