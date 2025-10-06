@@ -576,18 +576,18 @@ p {
     overflow: hidden;
 }
 
-/* Dark/Grayscale Image Effect */
+/* Original Image Effect */
 .member-avatar img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
     transition: all 0.4s ease;
-    filter: grayscale(100%) contrast(1.1) brightness(0.8);
+    filter: none;
 }
 
 .member-card:hover .member-avatar img {
-    filter: grayscale(0%) contrast(1.0) brightness(1.0);
+    filter: none;
     transform: scale(1.05);
 }
 
@@ -598,7 +598,7 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%);
+    background: transparent;
     border-radius: 50%;
     transition: opacity 0.4s ease;
     pointer-events: none;
@@ -713,15 +713,15 @@ p {
     object-fit: cover;
     border-radius: 50%;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    filter: grayscale(80%) contrast(1.1) brightness(0.7) sepia(10%);
+    filter: none;
 }
 
 .principal-hover-container:hover .principal-avatar img {
-    filter: grayscale(0%) contrast(1.0) brightness(1.0) sepia(0%);
+    filter: none;
     transform: scale(1.02);
 }
 
-/* Dark overlay for initial state */
+/* Transparent overlay for consistency */
 .principal-avatar::after {
     content: '';
     position: absolute;
@@ -729,7 +729,7 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.15) 100%);
+    background: transparent;
     border-radius: 50%;
     transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     pointer-events: none;
@@ -973,25 +973,25 @@ p {
     max-height: 90px;
     object-fit: contain;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    filter: grayscale(70%) contrast(1.2) brightness(0.8) saturate(0.5);
+    filter: none;
     position: relative;
     z-index: 1;
 }
 
 .partner-card:hover .partner-logo img {
-    filter: grayscale(0%) contrast(1.0) brightness(1.0) saturate(1.0);
+    filter: none;
     transform: scale(1.05);
 }
 
 .partner-logo svg {
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    filter: grayscale(70%) contrast(1.2) brightness(0.8) saturate(0.5);
+    filter: none;
     position: relative;
     z-index: 1;
 }
 
 .partner-card:hover .partner-logo svg {
-    filter: grayscale(0%) contrast(1.0) brightness(1.0) saturate(1.0);
+    filter: none;
     transform: scale(1.05);
 }
 
