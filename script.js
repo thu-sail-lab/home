@@ -1068,14 +1068,14 @@ function enhancePublicationLayout() {
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize navigation
-    initNavigation();
+    // // Initialize navigation
+    // initNavigation();
 
-    // Initialize publication filters
-    initPublicationFilters();
+    // // Initialize publication filters
+    // initPublicationFilters();
 
-    // Initialize partners slider
-    initPartnersSlider();
+    // // Initialize partners slider
+    // initPartnersSlider();
 
     // Enhance publication layout
     enhancePublicationLayout();
