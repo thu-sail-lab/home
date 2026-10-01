@@ -22,12 +22,15 @@ def load_news_data(file_path: str = 'data/news.json') -> List[Dict]:
 
 def generate_news_item_html(news_item: Dict) -> str:
     """Generate HTML for a single news item matching current design"""
+    # Keep year-only and month-only announcements at their supplied precision.
+    date_html = '\n'.join(
+        f'<span class="news-{part}">{news_item[part]}</span>'
+        for part in ('month', 'day', 'year') if news_item.get(part)
+    )
     html = f'''                        <!-- News Item -->
                         <div class="news-item">
                             <div class="news-date">
-                                <span class="news-month">{news_item['month']}</span>
-                                <span class="news-day">{news_item['day']}</span>
-                                <span class="news-year">{news_item['year']}</span>
+                                {date_html}
                             </div>
                             <div class="news-content">
                                 <div class="news-icon">
@@ -49,6 +52,7 @@ def generate_news_section_html(news_data: List[Dict]) -> str:
     past_news = [item for item in news_data if not item.get('featured', False) and item.get('visible', True)]
 
     # Limit featured news to 5 items (matching current design)
+    past_news = featured_news[5:] + past_news
     featured_news = featured_news[:5]
 
     # Generate featured news items HTML

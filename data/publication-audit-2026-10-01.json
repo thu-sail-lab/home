@@ -1,0 +1,819 @@
+{
+  "checked_on": "2026-10-01",
+  "source": "https://www.ie.tsinghua.edu.cn/info/1051/1048.htm",
+  "source_count": 66,
+  "previous_site_count": 71,
+  "added_count": 11,
+  "removed_duplicate_count": 1,
+  "current_site_count": 81,
+  "entries": [
+    {
+      "faculty_index": 1,
+      "faculty_citation": "An, X., Li, P.*, Han, J., Ji, W., Di, Q., Liang, Y., Hou, Y., Sha, Y., Su, W., Qiu, L., Zhang, C.*, A Computer-Aided System for Enhanced M-protein Diagnosis and Monitoring via Multimodal Learning, Nature Communications, accepted.",
+      "site_id": "publication-m-protein",
+      "site_title": "A Computer-Aided System for Enhanced M-protein Diagnosis and Monitoring via Multimodal Learning",
+      "action": "added",
+      "paper_url": "",
+      "sources": [
+        "https://www.ie.tsinghua.edu.cn/info/1051/1048.htm"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 2,
+      "faculty_citation": "Xu, H., and Zhang, C.*, Functional-Edged Network Modeling, Technometrics, accepted.",
+      "site_id": "publication-33",
+      "site_title": "Functional-Edged Network Modeling",
+      "action": "updated",
+      "paper_url": "https://arxiv.org/abs/2404.00218",
+      "sources": [
+        "https://www.ie.tsinghua.edu.cn/info/1051/1048.htm",
+        "https://arxiv.org/abs/2404.00218"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 3,
+      "faculty_citation": "Guo, J., Liu, P., Zhang, C.*, Adaptive Change Detection in Partially Observable Dynamic Network, EEE Transactions on Knowledge and Data Engineering, online.",
+      "site_id": "publication-adaptive-network",
+      "site_title": "Adaptive Change Detection in Partially Observable Dynamic Networks",
+      "action": "added",
+      "paper_url": "https://doi.org/10.1109/tkde.2025.3642127",
+      "sources": [
+        "https://doi.org/10.1109/tkde.2025.3642127"
+      ],
+      "note": "Publisher lists Haijie Xu as second author, not Peiyao Liu."
+    },
+    {
+      "faculty_index": 4,
+      "faculty_citation": "Xu, H., Xian, X., Zhang, C.*, Liu, K., Change Detection for Partially-Observable Linear Dynamic Systems with Adaptive Sampling via Upper Confidence Region, Naval Research Logistics, online.",
+      "site_id": "publication-26",
+      "site_title": "Partially‐Observable Sequential Change‐Point Detection for Autocorrelated Data via Adaptive Upper Confidence Region",
+      "action": "updated",
+      "paper_url": "https://doi.org/10.1002/nav.70073",
+      "sources": [
+        "https://doi.org/10.1002/nav.70073"
+      ],
+      "note": "Published title differs; publisher includes Bo Zhang."
+    },
+    {
+      "faculty_index": 5,
+      "faculty_citation": "Liu, P., Guo, J., Zhang, C.*, Chen, N., Spatial In-Profile Monitoring via Latent Tensor Gaussian Process with Mixed Effects, Technometrics, online.",
+      "site_id": "publication-2",
+      "site_title": "Spatial In-Profile Monitoring via Latent Tensor Gaussian Process with Mixed Effects",
+      "action": "updated",
+      "paper_url": "https://doi.org/10.1080/00401706.2026.2649041",
+      "sources": [
+        "https://doi.org/10.1080/00401706.2026.2649041"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 6,
+      "faculty_citation": "Huang, J., Xu, H., Zhang, C.*, Function-on-Function Gaussian Process with Application in Robust Parameter Design, INFORMS Journal on Computing, online.",
+      "site_id": "publication-3",
+      "site_title": "Function-on-Function Gaussian Process with Application in Robust Parameter Design",
+      "action": "updated",
+      "paper_url": "https://doi.org/10.1287/ijoc.2024.0751",
+      "sources": [
+        "https://doi.org/10.1287/ijoc.2024.0751"
+      ],
+      "note": "Publisher includes Yifei Gao."
+    },
+    {
+      "faculty_index": 7,
+      "faculty_citation": "An, X., Chua, J., Wang, Y., Hemelings, R., Husain R., Chong R., Wong T., Aung T., Wong D.*, Zhang, C.*, Schmetterer L.*, Addressing Glaucoma Structure-Function Relationship: A Multi-Task Learning Framework with Multi-Modal and Unpaired Data, IEEE Transactions on Medical Imaging, 45(2), 448-462.",
+      "site_id": "publication-14",
+      "site_title": "Addressing Glaucoma Structure-Function Relationship: A Multi-Task Learning Framework With Multi-Modal and Unpaired Data",
+      "action": "updated",
+      "paper_url": "https://doi.org/10.1109/tmi.2025.3600311",
+      "sources": [
+        "https://doi.org/10.1109/tmi.2025.3600311"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 8,
+      "faculty_citation": "Liu, P., Zhang, C.* (2025), Stream of Variation Modeling and Monitoring for Heterogeneous Profiles in Multi-Stage Manufacturing Processes, IISE Transactions, 1-14, https://doi.org/10.1080/24725854.2024.2413122.",
+      "site_id": "publication-23",
+      "site_title": "Stream of variation modeling and monitoring for heterogeneous profiles in multi-stage manufacturing processes",
+      "action": "updated",
+      "paper_url": "https://doi.org/10.1080/24725854.2024.2413122",
+      "sources": [
+        "https://doi.org/10.1080/24725854.2024.2413122"
+      ],
+      "note": "Publisher includes Yujie Ma; print year 2025."
+    },
+    {
+      "faculty_index": 9,
+      "faculty_citation": "Guo, J., Han, C., and Zhang, C.* (2025), MT-RAM: MultiTask-Recurrent Attention Model for Partially Observable Image Anomaly Classification and Localization, IISE Transactions, 1-16, https://doi.org/10.1080/24725854.2024.2425292.",
+      "site_id": "publication-28",
+      "site_title": "MT-RAM: Multi Task-Recurrent Attention Model for partially observable image anomaly classification and localization",
+      "action": "updated",
+      "paper_url": "https://doi.org/10.1080/24725854.2024.2425292",
+      "sources": [
+        "https://doi.org/10.1080/24725854.2024.2425292"
+      ],
+      "note": "Publisher includes Yujie Ma; print year 2025."
+    },
+    {
+      "faculty_index": 10,
+      "faculty_citation": "Ma, Y., Xia, X., Guo, J., and Zhang, C.* (2025), A Deep Reinforcement Learning Method Solving Bilevel Optimization for Product Design Considering Remanufacturing, IEEE Transaction on Engineering Management, 72, 573-590.",
+      "site_id": "publication-10",
+      "site_title": "A Deep Reinforcement Learning Method Solving Bilevel Optimization for Product Design Considering Remanufacturing",
+      "action": "updated",
+      "paper_url": "https://ieeexplore.ieee.org/abstract/document/10886978/",
+      "sources": [
+        "https://ieeexplore.ieee.org/abstract/document/10886978/"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 11,
+      "faculty_citation": "Yang, X., Lan, T., Qiu, H., Zhang, C.* (2025), Nonlinear Causal Discovery via Dynamic Latent Variables, IEEE Transactions on Automation Science and Engineering, 22, 10381-10391.",
+      "site_id": "publication-5",
+      "site_title": "Nonlinear Causal Discovery via Dynamic Latent Variables",
+      "action": "updated",
+      "paper_url": "https://ieeexplore.ieee.org/abstract/document/10848521/",
+      "sources": [
+        "https://ieeexplore.ieee.org/abstract/document/10848521/"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 12,
+      "faculty_citation": "Yang, X., Niu, B., Lan, T., Zhang, C.* (2025), Federated Multi-task Bayesian Network Learning in the Presence of Overlapping and Distinct Variables, IISE Transactions, 57(7), 773–787.",
+      "site_id": "publication-27",
+      "site_title": "Federated multi-task Bayesian network learning in the presence of overlapping and distinct variables",
+      "action": "updated",
+      "paper_url": "https://doi.org/10.1080/24725854.2024.2443177",
+      "sources": [
+        "https://doi.org/10.1080/24725854.2024.2443177"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 13,
+      "faculty_citation": "Tian, X., Zhang, C.*, Zheng, B. (2024), Fine-Grained Passenger Load Prediction inside Metro Network via Smart Card Data, International Journal of Intelligent Systems, 2024(1), 6643018.",
+      "site_id": "publication-31",
+      "site_title": "Fine‐Grained Passenger Load Prediction inside Metro Network via Smart Card Data",
+      "action": "updated",
+      "paper_url": "https://onlinelibrary.wiley.com/doi/abs/10.1155/2024/6643018",
+      "sources": [
+        "https://onlinelibrary.wiley.com/doi/abs/10.1155/2024/6643018"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 14,
+      "faculty_citation": "Ma, Y., Zhang, C.*, Du, G. (2024), Reverse logistics platform decisions integrating crowdsourced contracting: A three-level interactive optimization approach for product design considering remanufacturing, Computers & Industrial Engineering, 193, 110305.",
+      "site_id": "publication-25",
+      "site_title": "Reverse logistics platform decisions integrating crowdsourced contracting: A three-level interactive optimization approach for product design considering remanufacturing",
+      "action": "updated",
+      "paper_url": "https://www.sciencedirect.com/science/article/pii/S0360835224004261",
+      "sources": [
+        "https://www.sciencedirect.com/science/article/pii/S0360835224004261"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 15,
+      "faculty_citation": "Liu, P., Lin, J., Zhang, C.* (2024), Heterogeneous Multivariate Functional Time Series Modeling: A State Space Approach, IEEE Transactions on Knowledge and Data Engineering, 36(12), 8421-8433.",
+      "site_id": "publication-29",
+      "site_title": "Heterogeneous Multivariate Functional Time Series Modeling: A State Space Approach",
+      "action": "updated",
+      "paper_url": "https://ieeexplore.ieee.org/abstract/document/10713887/",
+      "sources": [
+        "https://ieeexplore.ieee.org/abstract/document/10713887/"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 16,
+      "faculty_citation": "Lin, J., Lan, T., Zhang, B., Deng, K., Miao, D., Ye., J., Li, Y., and Zhang, C.* (2024), Multi-Scenario Cellular KPI Prediction Based on Spatiotemporal Graph Neural Network, IEEE Transactions on Automation Science and Engineering, 22, 5131-5142.",
+      "site_id": "publication-21",
+      "site_title": "Multi-Scenario Cellular KPI Prediction Based on Spatiotemporal Graph Neural Network",
+      "action": "updated",
+      "paper_url": "https://doi.org/10.1109/tase.2024.3416952",
+      "sources": [
+        "https://doi.org/10.1109/tase.2024.3416952"
+      ],
+      "note": "Published author list differs from university citation; retained publisher order."
+    },
+    {
+      "faculty_index": 17,
+      "faculty_citation": "Liu, P., Xu, H., and Zhang, C.* (2024), A Comprehensive Survey of Recent Research on Profile Data Analysis, Journal of Quality Technology, 56(5), 428–454.",
+      "site_id": "publication-24",
+      "site_title": "A comprehensive survey of recent research on profile data analysis",
+      "action": "updated",
+      "paper_url": "https://doi.org/10.1080/00224065.2024.2369933",
+      "sources": [
+        "https://doi.org/10.1080/00224065.2024.2369933"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 18,
+      "faculty_citation": "An, X., Zhang, C.*, Hou, L., and Wang, K.(2024), Coupled Epidemic-Information Propagation with Stranding Mechanism on Multiplex Metapopulation Networks, IEEE Transactions on Computational Social Systems, 11(5), 6727-6744.",
+      "site_id": "publication-17",
+      "site_title": "Coupled Epidemic-Information Propagation With Stranding Mechanism on Multiplex Metapopulation Networks",
+      "action": "updated",
+      "paper_url": "https://ieeexplore.ieee.org/abstract/document/10557510/",
+      "sources": [
+        "https://ieeexplore.ieee.org/abstract/document/10557510/"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 19,
+      "faculty_citation": "Sergin, N., Hu, J., Li, Z., Zhang, C., and Yan, H.* (2024), Low-Rank Robust Subspace Tensor Clustering for Metro Passenger Flow Modeling, INFORMS Journal on Data Science, 4(1), 33-50.",
+      "site_id": "publication-11",
+      "site_title": "Low-Rank Robust Subspace Tensor Clustering for Metro Passenger Flow Modeling",
+      "action": "updated",
+      "paper_url": "https://doi.org/10.1287/ijds.2022.0028",
+      "sources": [
+        "https://doi.org/10.1287/ijds.2022.0028"
+      ],
+      "note": "Publisher includes Fugee Tsung; print year 2025."
+    },
+    {
+      "faculty_index": 20,
+      "faculty_citation": "Li, W., and Zhang, C.* (2023), A Markov-Switching Hidden Heterogeneous Network Autoregressive Model for Multivariate Time Series Data with Multimodality, IISE Transactions, 55(11), 1118–1132.",
+      "site_id": "publication-40",
+      "site_title": "A Markov-switching hidden heterogeneous network autoregressive model for multivariate time series data with multimodality",
+      "action": "updated",
+      "paper_url": "https://www.tandfonline.com/doi/abs/10.1080/24725854.2022.2148780",
+      "sources": [
+        "https://www.tandfonline.com/doi/abs/10.1080/24725854.2022.2148780"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 21,
+      "faculty_citation": "Yang, X., Zhang, C.*, and Cao, H. (2023), A Cluster-oriented Bayesian Network Approach for Mixed-type Event Prediction with Application in Order Logistics, IEEE Transactions on Industrial Informatics, 19(10), 10069 - 10078.",
+      "site_id": "publication-43",
+      "site_title": "A Cluster-Oriented Bayesian Network Approach for Mixed-Type Event Prediction With Application in Order Logistics",
+      "action": "updated",
+      "paper_url": "https://doi.org/10.1109/tii.2022.3233658",
+      "sources": [
+        "https://doi.org/10.1109/tii.2022.3233658"
+      ],
+      "note": "Publisher author order is Xing Yang, Hui Cao, Chen Zhang."
+    },
+    {
+      "faculty_index": 22,
+      "faculty_citation": "Yang, X., and Zhang, C.* (2023), Online Directed Structural Change-point Detection: A Segment-wise Time-varying Dynamic Bayesian Network Approach, IISE Transactions, 56(5), 527–540.",
+      "site_id": "publication-22",
+      "site_title": "Online directed-structural change-point detection: A segment-wise time-varying dynamic Bayesian network approach",
+      "action": "updated",
+      "paper_url": "https://www.tandfonline.com/doi/abs/10.1080/24725854.2023.2207252",
+      "sources": [
+        "https://www.tandfonline.com/doi/abs/10.1080/24725854.2023.2207252"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 23,
+      "faculty_citation": "Guo, J., Yan, H., and Zhang, C.* (2023), Thompson Sampling based Partially Observable Online Change Detection for Exponential Families, INFORMS Journal on Data Science, 3(2), 145-161.",
+      "site_id": "publication-20",
+      "site_title": "Thompson Sampling-Based Partially Observable Online Change Detection for Exponential Families",
+      "action": "updated",
+      "paper_url": "https://pubsonline.informs.org/doi/abs/10.1287/ijds.2022.00011",
+      "sources": [
+        "https://pubsonline.informs.org/doi/abs/10.1287/ijds.2022.00011"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 24,
+      "faculty_citation": "An, X., Li, P., and Zhang, C.* (2023), Deep Cascade-Learning Model via Recurrent Attention for Immunofixation Electrophoresis Image Analysis, IEEE Transactions on Medical Imaging, 42(12), 3847-3859.",
+      "site_id": "publication-44",
+      "site_title": "Deep Cascade-Learning Model via Recurrent Attention for Immunofixation Electrophoresis Image Analysis",
+      "action": "updated",
+      "paper_url": "https://ieeexplore.ieee.org/abstract/document/10248034/",
+      "sources": [
+        "https://ieeexplore.ieee.org/abstract/document/10248034/"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 25,
+      "faculty_citation": "Meng, H., Li, Y. F.*, and Zhang, C. (2022), Estimation of discharge voltage for lithium- ion batteries through orthogonal experiments at subzero environment, Journal of Energy Storage, 52(C), 10508.",
+      "site_id": "publication-47",
+      "site_title": "Modeling of discharge voltage for lithium-ion batteries through orthogonal experiments at subzero environment",
+      "action": "updated",
+      "paper_url": "https://www.sciencedirect.com/science/article/pii/S2352152X2201060X",
+      "sources": [
+        "https://www.sciencedirect.com/science/article/pii/S2352152X2201060X"
+      ],
+      "note": "Existing publisher title uses Modeling rather than Estimation."
+    },
+    {
+      "faculty_index": 26,
+      "faculty_citation": "Guo, J., Yan, H., and Zhang, C.* (2022), A Bayesian Partially Observable Online Change Detection Approach with Thompson Sampling, Technometrics, 65(2), 179-191.",
+      "site_id": "publication-35",
+      "site_title": "A Bayesian Partially Observable Online Change Detection Approach with Thompson Sampling",
+      "action": "updated",
+      "paper_url": "https://www.tandfonline.com/doi/abs/10.1080/00401706.2022.2127914",
+      "sources": [
+        "https://www.tandfonline.com/doi/abs/10.1080/00401706.2022.2127914"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 27,
+      "faculty_citation": "Li, Z., Yan, H., Zhang, C., and Tsung, F.* (2022), Individualized Passenger Travel Pattern Multi-Clustering based on Graph Regularized Tensor Latent Dirichlet Allocation, Data Mining and Knowledge Discovery, 36(4), 1247-1278.",
+      "site_id": "publication-46",
+      "site_title": "Individualized passenger travel pattern multi-clustering based on graph regularized tensor latent dirichlet allocation",
+      "action": "updated",
+      "paper_url": "https://link.springer.com/article/10.1007/s10618-022-00842-3",
+      "sources": [
+        "https://link.springer.com/article/10.1007/s10618-022-00842-3"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 28,
+      "faculty_citation": "Yang, X., Zhang, C.*, and Zheng, B. H. (2022), Segment-Wise Time-Varying Dynamic Bayesian Network with Graph Regularization, ACM Transactions on Knowledge Discovery from Data, 16(6), 1-23.",
+      "site_id": "publication-48",
+      "site_title": "Segment-wise time-varying dynamic Bayesian network with graph regularization",
+      "action": "updated",
+      "paper_url": "https://dl.acm.org/doi/abs/10.1145/3522589",
+      "sources": [
+        "https://dl.acm.org/doi/abs/10.1145/3522589"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 29,
+      "faculty_citation": "Zhou, P., Liu, P., Wang, S., Zhang, C.*, Zhang, J., and Li, S. (2022), Functional state-space model for multi-channel autoregressive profiles with application in advanced manufacturing, Journal of Manufacturing Systems, 64, 356-371.",
+      "site_id": "publication-50",
+      "site_title": "Functional state-space model for multi-channel autoregressive profiles with application in advanced manufacturing",
+      "action": "updated",
+      "paper_url": "https://www.sciencedirect.com/science/article/pii/S027861252200111X",
+      "sources": [
+        "https://www.sciencedirect.com/science/article/pii/S027861252200111X"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 30,
+      "faculty_citation": "Li, W., and Zhang, C.* (2022), A Hidden Markov Model for Condition Monitoring of Time Series Data in Complex Network Systems, IEEE Transactions on Reliability, 72(4), 1478-1492.",
+      "site_id": "publication-39",
+      "site_title": "A hidden markov model for condition monitoring of time series data in complex network systems",
+      "action": "updated",
+      "paper_url": "https://ieeexplore.ieee.org/abstract/document/10025504/",
+      "sources": [
+        "https://ieeexplore.ieee.org/abstract/document/10025504/"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 31,
+      "faculty_citation": "Zhang, C.*, Zheng, B. and Tsung, F. (2022), Multi-view Metro Station Clustering based on Passenger Flows: A Functional Data Edged Network Community Detection Approach, Data Mining and Knowledge Discovery, 37(3), 1154-1208.",
+      "site_id": "publication-37",
+      "site_title": "Multi-view metro station clustering based on passenger flows: a functional data-edged network community detection approach",
+      "action": "updated",
+      "paper_url": "https://link.springer.com/article/10.1007/s10618-023-00916-w",
+      "sources": [
+        "https://link.springer.com/article/10.1007/s10618-023-00916-w"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 32,
+      "faculty_citation": "Liu, P., Du, J., Zang, Y., Zhang, C.*, and Wang, K. (2022), In-profile Monitoring for Cluster-Correlated Data in Advanced Manufacturing System, Journal of Quality Technology, 55(2), 195–219.",
+      "site_id": "publication-38",
+      "site_title": "In-profile monitoring for cluster-correlated data in advanced manufacturing system",
+      "action": "updated",
+      "paper_url": "https://www.tandfonline.com/doi/abs/10.1080/00224065.2022.2106912",
+      "sources": [
+        "https://www.tandfonline.com/doi/abs/10.1080/00224065.2022.2106912"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 33,
+      "faculty_citation": "Wu, H., Zhang, C., and Li, Y F.* (2021), Monitoring Heterogeneous Multivariate Profiles Based on Heterogeneous Graphical Model, Technometrics, 64(2), 210-223.",
+      "site_id": "publication-49",
+      "site_title": "Monitoring Heterogeneous Multivariate Profiles Based on Heterogeneous Graphical Model",
+      "action": "updated",
+      "paper_url": "https://www.tandfonline.com/doi/abs/10.1080/00401706.2021.1935325",
+      "sources": [
+        "https://www.tandfonline.com/doi/abs/10.1080/00401706.2021.1935325"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 34,
+      "faculty_citation": "Zhang, C., Yan, H.*, Lee, S., and Shi, J. (2021), Dynamic Multivariate Functional data Modeling via Sparse Subspace Learning, Technometrics , 63(3), 370-383.",
+      "site_id": "publication-51",
+      "site_title": "Dynamic multivariate functional data modeling via sparse subspace learning",
+      "action": "updated",
+      "paper_url": "https://www.tandfonline.com/doi/abs/10.1080/00401706.2020.1800516",
+      "sources": [
+        "https://www.tandfonline.com/doi/abs/10.1080/00401706.2020.1800516"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 35,
+      "faculty_citation": "Zhang, C.*, Hoi, C.H. and Tsung, F. (2020), Multivariate Functional Data Modeling via Nonnegative Functional Factorization with Time Warping, ACM Transactions on Knowledge Discovery from Data, 14(6), 1-23.",
+      "site_id": "publication-60",
+      "site_title": "Time-Warped Sparse Non-negative Factorization for Functional Data Analysis",
+      "action": "updated",
+      "paper_url": "https://doi.org/10.1145/3408313",
+      "sources": [
+        "https://doi.org/10.1145/3408313"
+      ],
+      "note": "Published as Time-Warped Sparse Non-negative Factorization for Functional Data Analysis (same authors, venue, year)."
+    },
+    {
+      "faculty_index": 36,
+      "faculty_citation": "Zhang, C.* and Hoi, C.H. (2020), A Data-Driven Method for Online Monitoring Tube Wall Thinning Process in Dynamic Noisy Environment, IEEE Transactions on Automation Science and Engineering, 19(1), 441-456.",
+      "site_id": "publication-54",
+      "site_title": "A Data-Driven Method for Online Monitoring Tube Wall Thinning Process in Dynamic Noisy Environment",
+      "action": "updated",
+      "paper_url": "https://doi.org/10.1109/tase.2020.3038708",
+      "sources": [
+        "https://doi.org/10.1109/tase.2020.3038708"
+      ],
+      "note": "Publisher lists additional coauthors; print year 2022."
+    },
+    {
+      "faculty_index": 37,
+      "faculty_citation": "Li, Z., Yan, H., Zhang, C., and Tsung, F.* (2020), Long-Short Term Spatiotemporal Tensor Prediction for Passenger Flow Profile, IEEE Robotics and Automation Letters, 5(4), 5010-5017.",
+      "site_id": "publication-57",
+      "site_title": "Long-short term spatiotemporal tensor prediction for passenger flow profile",
+      "action": "updated",
+      "paper_url": "https://ieeexplore.ieee.org/abstract/document/9126133/",
+      "sources": [
+        "https://ieeexplore.ieee.org/abstract/document/9126133/"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 38,
+      "faculty_citation": "Zhang, C., Chen, N. and Wu, J.* (2019), Spatial Rank based High-dimensional Monitoring Through Random Projection, Journal of Quality Technology, 52 (2), 111-127.",
+      "site_id": "publication-58",
+      "site_title": "Spatial rank-based high-dimensional monitoring through random projection",
+      "action": "updated",
+      "paper_url": "https://www.tandfonline.com/doi/abs/10.1080/00224065.2019.1571336",
+      "sources": [
+        "https://www.tandfonline.com/doi/abs/10.1080/00224065.2019.1571336"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 39,
+      "faculty_citation": "Wu, J.*, Xu, H., Zhang, C., and Yuan, Y. (2019), A Sequential Bayesian Partitioning Approach for Online Steady-State Detection of Multivariate Systems, IEEE Transactions on Automation Science and Engineering, 16(4), 1882-1895.",
+      "site_id": "publication-62",
+      "site_title": "A sequential bayesian partitioning approach for online steady-state detection of multivariate systems",
+      "action": "updated",
+      "paper_url": "https://ieeexplore.ieee.org/abstract/document/8667062/",
+      "sources": [
+        "https://ieeexplore.ieee.org/abstract/document/8667062/"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 40,
+      "faculty_citation": "Xian, X., Zhang, C., Bonk, S., and Liu, K.* (2019), Online Monitoring of Big Data Streams: A Rank-based Sampling Algorithm by Data Augmentation, Journal of Quality Technology, 53 (2), 135-153.",
+      "site_id": "publication-52",
+      "site_title": "Online monitoring of big data streams: A rank-based sampling algorithm by data augmentation",
+      "action": "updated",
+      "paper_url": "https://www.tandfonline.com/doi/abs/10.1080/00224065.2019.1681924",
+      "sources": [
+        "https://www.tandfonline.com/doi/abs/10.1080/00224065.2019.1681924"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 41,
+      "faculty_citation": "Zhang, C., Yan, H., Lee, S., and Shi, J.* (2018), Multiple Profiles Sensor-Based Monitoring and Anomaly Detection, Journal of Quality Technology, 50(4), 344-362.",
+      "site_id": "publication-64",
+      "site_title": "Multiple profiles sensor-based monitoring and anomaly detection",
+      "action": "updated",
+      "paper_url": "https://www.tandfonline.com/doi/abs/10.1080/00224065.2018.1508275",
+      "sources": [
+        "https://www.tandfonline.com/doi/abs/10.1080/00224065.2018.1508275"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 42,
+      "faculty_citation": "Zhang, C., Yan, H.*, Lee, S., and Shi, J. (2018), Multichannel Profile Monitoring based on Sparse Multichannel Functional Principal Component Analysis, IISE Transactions, 50(10), 878-891.",
+      "site_id": "publication-63",
+      "site_title": "Weakly correlated profile monitoring based on sparse multi-channel functional principal component analysis",
+      "action": "updated",
+      "paper_url": "https://doi.org/10.1080/24725854.2018.1451012",
+      "sources": [
+        "https://doi.org/10.1080/24725854.2018.1451012"
+      ],
+      "note": "Published title begins Weakly correlated profile monitoring."
+    },
+    {
+      "faculty_index": 43,
+      "faculty_citation": "Zhang, C., and Chen, N.* (2018), Statistical Analysis of Simulation Outputs from Parallel Computing, ACM Transactions on Modeling and Computer Simulation (TOMACS), 28(3), 21-35.",
+      "site_id": "publication-66",
+      "site_title": "Statistical analysis of simulation output from parallel computing",
+      "action": "updated",
+      "paper_url": "https://dl.acm.org/doi/abs/10.1145/3186327",
+      "sources": [
+        "https://dl.acm.org/doi/abs/10.1145/3186327"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 44,
+      "faculty_citation": "Zhang, C., Lei, Y., Zhang, L., and Chen, N.* (2017), Modelling Tunnel Profile in the Presence of Coordinate Errors: A Gaussian Process-Based Approach, IISE Transactions, 49(11), pp.1065-1077.",
+      "site_id": "publication-68",
+      "site_title": "Modeling tunnel profile in the presence of coordinate errors: A Gaussian process-based approach",
+      "action": "updated",
+      "paper_url": "https://www.tandfonline.com/doi/abs/10.1080/24725854.2017.1348646",
+      "sources": [
+        "https://www.tandfonline.com/doi/abs/10.1080/24725854.2017.1348646"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 45,
+      "faculty_citation": "Zhang, C., Chen, N.*, and Li, Z.(2017), State space modeling of autocorrelated multivariate Poisson counts, IISE Transactions, 49(5), 518-531.",
+      "site_id": "publication-67",
+      "site_title": "State space modeling of autocorrelated multivariate Poisson counts",
+      "action": "updated",
+      "paper_url": "https://www.tandfonline.com/doi/abs/10.1080/24725854.2016.1251665",
+      "sources": [
+        "https://www.tandfonline.com/doi/abs/10.1080/24725854.2016.1251665"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 46,
+      "faculty_citation": "Zhang, C., Chen, N.*, and Zou, C. (2016), Robust multivariate control chart based on goodness-of-fit test, Journal of Quality Technology, 48(2), 139-161.",
+      "site_id": "publication-70",
+      "site_title": "Robust multivariate control chart based on goodness-of-fit test",
+      "action": "updated",
+      "paper_url": "https://www.tandfonline.com/doi/abs/10.1080/00224065.2016.11918156",
+      "sources": [
+        "https://www.tandfonline.com/doi/abs/10.1080/00224065.2016.11918156"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 47,
+      "faculty_citation": "Yang, Y., Lan, T., Gao, Y., Lu, Y., He, W., Wang, M., Liu, C.*, Zhang, C.*. VETime: Vision Enhanced Zero-Shot Time Series Anomaly Detection, NIPS, 2026.",
+      "site_id": "publication-vetime",
+      "site_title": "VETime: Vision Enhanced Zero-Shot Time Series Anomaly Detection",
+      "action": "added",
+      "paper_url": "https://arxiv.org/abs/2602.16681",
+      "sources": [
+        "https://www.ie.tsinghua.edu.cn/info/1051/1048.htm",
+        "https://arxiv.org/abs/2602.16681"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 48,
+      "faculty_citation": "Gao, Y., Lan, T., Lu, Y., An, X., Wang, M., He, W., Li, Y., Zhang, C.*. Supervision Recovery for Time Series Anomaly Detection via Counterfactual Pairing, NIPS, 2026.",
+      "site_id": "publication-recovery",
+      "site_title": "Supervision Recovery for Time Series Anomaly Detection via Counterfactual Pairing",
+      "action": "added",
+      "paper_url": "https://openreview.net/forum?id=YqBYI9KKtm",
+      "sources": [
+        "https://www.ie.tsinghua.edu.cn/info/1051/1048.htm",
+        "https://neurips.cc/Downloads/2026",
+        "https://arxiv.org/abs/2609.33610"
+      ],
+      "note": "Conference title retained; arXiv uses Context-Anchored Pairing."
+    },
+    {
+      "faculty_index": 49,
+      "faculty_citation": "Xa, X., Zhang, C., Liu, K*. Learning Collision‑Free Dispatch Policies for Route‑Wise Decision‑Dependent Anomaly Detection, NIPS, 2026.",
+      "site_id": "publication-collision",
+      "site_title": "Learning Collision-Free Dispatch Policies for Route-Wise Decision-Dependent Anomaly Detection",
+      "action": "added",
+      "paper_url": "https://openreview.net/forum?id=s01jPERPlb",
+      "sources": [
+        "https://www.ie.tsinghua.edu.cn/info/1051/1048.htm",
+        "https://neurips.cc/Downloads/2026"
+      ],
+      "note": "First author retained as “Xa, X.” at the user’s explicit request. Public OpenReview record could not be independently checked."
+    },
+    {
+      "faculty_index": 50,
+      "faculty_citation": "Lu, Y., Gao, Y., Lan, T., Yang, Y., He, W., Wang, M., Zhang, C*. SCALE: Style-Causal Disentanglement with Adaptive Lifelong Expert for Online Latent-domain Anomaly Detection, Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining, KDD 2026.",
+      "site_id": "publication-scale",
+      "site_title": "SCALE: Style-Causal Disentanglement with Adaptive Lifelong Expert for Online Latent-domain Anomaly Detection",
+      "action": "added",
+      "paper_url": "https://doi.org/10.1145/3770855.3817912",
+      "sources": [
+        "https://doi.org/10.1145/3770855.3817912"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 51,
+      "faculty_citation": "Jiang, M., Huang, J., Chen, Y., Zhang, C.*, DRL-STAF: A Deep Reinforcement Learning Framework for State-aware Forecasting of Complex Multivariate Hidden Markov Process, ICML 2026.",
+      "site_id": "publication-0",
+      "site_title": "DRL-STAF: A Deep Reinforcement Learning Framework for State-aware Forecasting of Complex Multivariate Hidden Markov Process",
+      "action": "present",
+      "paper_url": "images/papers/ICML2026%20DRL-STAF.pdf",
+      "sources": [
+        "images/papers/ICML2026%20DRL-STAF.pdf"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 52,
+      "faculty_citation": "Lan, T., Le, H., Li, J., He, W., Wang, M., Liu, C.*, Zhang, C.*, Towards Foundation Models for Zero-Shot Time Series Anomaly Detection: Leveraging Synthetic Data and Relative Context Discrepancy, ICML 2026.",
+      "site_id": "publication-1",
+      "site_title": "Towards Foundation Models for Zero-Shot Time Series Anomaly Detection: Leveraging Synthetic Data and Relative Context Discrepancy",
+      "action": "present",
+      "paper_url": "https://arxiv.org/abs/2509.21190",
+      "sources": [
+        "https://arxiv.org/abs/2509.21190"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 53,
+      "faculty_citation": "Huang, J., Xu, H., Guo, J., Jiang, M., Zhang, C.*, Combinatorial Bandit Bayesian Optimization for Tensor Outputs, ICLR 2026.",
+      "site_id": "publication-4",
+      "site_title": "Combinatorial Bandit Bayesian Optimization for Tensor Outputs",
+      "action": "present",
+      "paper_url": "https://arxiv.org/pdf/2602.00640",
+      "sources": [
+        "https://arxiv.org/pdf/2602.00640"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 54,
+      "faculty_citation": "Huang, J., Xu, H., Jiang, M., Zhang, C.*, Function-on-Function Bayesian Optimization, AAAI 2026.",
+      "site_id": "publication-ffbo",
+      "site_title": "Function-on-Function Bayesian Optimization",
+      "action": "added",
+      "paper_url": "https://doi.org/10.1609/aaai.v40i26.39353",
+      "sources": [
+        "https://ojs.aaai.org/index.php/AAAI/article/view/39353"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 55,
+      "faculty_citation": "Lin, J., Lan, T., Zhang, B., Deng, K., Miao, D., Ye., J., Li, Y., and Zhang, C.*, Wavelet-based Disentangled Adaptive Normalization for Non-stationary Times Series Forecasting, AI for Time Series Workshop at AAAI 2026.",
+      "site_id": "publication-wdan",
+      "site_title": "Wavelet-based Disentangled Adaptive Normalization for Non-stationary Times Series Forecasting",
+      "action": "added",
+      "paper_url": "https://arxiv.org/abs/2506.05857",
+      "sources": [
+        "https://www.ie.tsinghua.edu.cn/info/1051/1048.htm",
+        "https://arxiv.org/abs/2506.05857"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 56,
+      "faculty_citation": "Gao, Y., Chen, Y., and Zhang, C.* (2026), FAME: Adaptive Functional Attention with Expert Routing for Function-on-Function Regression, The Thirty-Ninth Annual Conference on Neural Information Processing Systems, 2025.",
+      "site_id": "publication-fame",
+      "site_title": "FAME: Adaptive Functional Attention with Expert Routing for Function-on-Function Regression",
+      "action": "added",
+      "paper_url": "https://papers.neurips.cc/paper_files/paper/2025/file/58d2a72bbb2b68d4ac07414044efd0ad-Paper-Conference.pdf",
+      "sources": [
+        "https://arxiv.org/abs/2510.00621"
+      ],
+      "note": "NeurIPS 2025 confirmed; university citation also contains an inconsistent 2026."
+    },
+    {
+      "faculty_index": 57,
+      "faculty_citation": "Gou, X., Li, Z., Lan, T., Lin, J., Li, Z., Zhao, B., Zhang, C., Wang, D., Zhang, X., TraffiDent: A Dataset for Understanding the Interplay Between Traffic Dynamics and Incidents, The Thirty-Ninth Annual Conference on Neural Information Processing Systems, 2025.",
+      "site_id": "publication-18",
+      "site_title": "TraffiDent: A Dataset for Understanding the Interplay Between Traffic Dynamics and Incidents",
+      "action": "updated",
+      "paper_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/7813e19a86fd73d40f7e811ab15f6d5f-Abstract-Datasets_and_Benchmarks_Track.html",
+      "sources": [
+        "https://proceedings.neurips.cc/paper_files/paper/2025/hash/7813e19a86fd73d40f7e811ab15f6d5f-Abstract-Datasets_and_Benchmarks_Track.html"
+      ],
+      "note": "Existing XTraffic preprint updated to TraffiDent, NeurIPS 2025."
+    },
+    {
+      "faculty_index": 58,
+      "faculty_citation": "Lan, T., Li, Z., Li, Z., Bai, L., Li, M., Tsung, F., Ketter, W., Zhao, R., and Zhang, C.* (2023), MM-DAG: Multi-task DAG Learning for Multi-modal Data - with Application for Traffic Congestion Analysis, Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, 1188-1199.",
+      "site_id": "publication-36",
+      "site_title": "MM-DAG: Multi-task DAG Learning for Multi-modal Data--with Application for Traffic Congestion Analysis",
+      "action": "updated",
+      "paper_url": "https://dl.acm.org/doi/abs/10.1145/3580305.3599436",
+      "sources": [
+        "https://dl.acm.org/doi/abs/10.1145/3580305.3599436"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 59,
+      "faculty_citation": "Zhang, W., Zhang, C.*, and Tsung, F. (2022), GRELEN: Multivariate Time Series Anomaly Detection from the Perspective of Graph Relational Learning, 31st International Joint Conference on Artificial Intelligence (IJCAI), 2390-2397.",
+      "site_id": "publication-45",
+      "site_title": "GRELEN: Multivariate Time Series Anomaly Detection from the Perspective of Graph Relational Learning.",
+      "action": "updated",
+      "paper_url": "https://www.ijcai.org/proceedings/2022/0332.pdf",
+      "sources": [
+        "https://www.ijcai.org/proceedings/2022/0332.pdf"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 60,
+      "faculty_citation": "Zhang, W., Zhang, C., and Tsung, F. (2021), Transformer Based Spatial-Temporal Fusion Network for Metro Passenger Flow Forecasting, IEEE 17th International Conference on Automation Science and Engineering (CASE), 1515-1520.",
+      "site_id": "publication-53",
+      "site_title": "Transformer Based Spatial-Temporal Fusion Network for Metro Passenger Flow Forecasting",
+      "action": "updated",
+      "paper_url": "https://ieeexplore.ieee.org/abstract/document/9551442/",
+      "sources": [
+        "https://ieeexplore.ieee.org/abstract/document/9551442/"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 61,
+      "faculty_citation": "He, B., Li,S., Zhang, C.*, Zheng, B., and Tsung, F. (2021), Holistic Prediction for Public Transport Crowd Flows: A Spatio Dynamic Graph Network Approach, Joint European Conference on Machine Learning and Knowledge Discovery in Databases (ECML PCDD), 321-336.",
+      "site_id": "publication-55",
+      "site_title": "Holistic Prediction for Public Transport Crowd Flows: A Spatio Dynamic Graph Network Approach",
+      "action": "updated",
+      "paper_url": "https://link.springer.com/chapter/10.1007/978-3-030-86486-6_20",
+      "sources": [
+        "https://link.springer.com/chapter/10.1007/978-3-030-86486-6_20"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 62,
+      "faculty_citation": "Li, Z., Yan, H., Zhang, C. and Tsung, F. (2020), Tensor Completion for Weakly-dependent Data on Graph for Metro Passenger Flow Prediction, 34th AAAI Conference on Artificial Intelligence, 4804-4810.",
+      "site_id": "publication-56",
+      "site_title": "Tensor completion for weakly-dependent data on graph for metro passenger flow prediction",
+      "action": "updated",
+      "paper_url": "https://ojs.aaai.org/index.php/AAAI/article/view/5915",
+      "sources": [
+        "https://ojs.aaai.org/index.php/AAAI/article/view/5915"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 63,
+      "faculty_citation": "Zhang, C., and Hoi, C.H.* (2019), Online Learning for Partially Observable Multisensor Sequential Change Detection, 33rd AAAI Conference on Artificial Intelligence, 5733-5740.",
+      "site_id": "publication-61",
+      "site_title": "Partially observable multi-sensor sequential change detection: A combinatorial multi-armed bandit approach",
+      "action": "updated",
+      "paper_url": "https://ojs.aaai.org/index.php/AAAI/article/view/4519",
+      "sources": [
+        "https://ojs.aaai.org/index.php/AAAI/article/view/4519"
+      ],
+      "note": "Published title is Partially Observable Multi-Sensor Sequential Change Detection: A Combinatorial Multi-Armed Bandit Approach; same AAAI pages 5733–5740."
+    },
+    {
+      "faculty_index": 64,
+      "faculty_citation": "Liu, P., Zhang, C.*, Advanced Data Analytical Techniques for Profile Monitoring. in Multimodal and Tensor Data Analytics for Industrial Systems Improvement (pp. 21-39). Cham: Springer International Publishing.",
+      "site_id": "publication-30",
+      "site_title": "Advanced Data Analytical Techniques for Profile Monitoring",
+      "action": "updated",
+      "paper_url": "https://link.springer.com/chapter/10.1007/978-3-031-53092-0_3",
+      "sources": [
+        "https://link.springer.com/chapter/10.1007/978-3-031-53092-0_3"
+      ],
+      "note": ""
+    },
+    {
+      "faculty_index": 65,
+      "faculty_citation": "Zhang, C., Wang, K., Tsung, F., Big Data, in International Encyclopedia of Statistical Science, 2nd Edition, Ed. Lovric, M., Springer, New York, May, 2025.",
+      "site_id": "publication-big-data",
+      "site_title": "Big Data",
+      "action": "added",
+      "paper_url": "https://doi.org/10.1007/978-3-662-69359-9_70",
+      "sources": [
+        "https://doi.org/10.1007/978-3-662-69359-9_70"
+      ],
+      "note": "Publisher also lists Miodrag Lovric as an author."
+    },
+    {
+      "faculty_index": 66,
+      "faculty_citation": "Zhang, C., Li, Y., Tsung, F., Industrial Big Data, in International Encyclopedia of Statistical Science, 2nd Edition, Ed. Lovric, M., Springer, New York, May, 2025.",
+      "site_id": "publication-industrial-big-data",
+      "site_title": "Industrial Big Data",
+      "action": "added",
+      "paper_url": "https://doi.org/10.1007/978-3-662-69359-9_286",
+      "sources": [
+        "https://doi.org/10.1007/978-3-662-69359-9_286"
+      ],
+      "note": ""
+    }
+  ],
+  "unresolved": [
+    {
+      "publication_id": "publication-m-protein",
+      "issue": "No public paper or DOI located; accepted citation included using supplied author initials."
+    },
+    {
+      "publication_id": "publication-collision",
+      "issue": "First author retained as “Xa, X.” at the user’s explicit request. Public OpenReview record could not be independently checked."
+    }
+  ]
+}

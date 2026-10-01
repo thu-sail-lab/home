@@ -59,9 +59,13 @@ class DataValidator:
             # Check date formats
             for i, item in enumerate(news_data):
                 try:
-                    datetime.strptime(item.get('date', ''), '%Y-%m-%d')
-                except ValueError:
-                    self.errors.append(f"News item {i}: Invalid date format (should be YYYY-MM-DD)")
+                    date = item.get('date', '')
+                    formats = {4: '%Y', 7: '%Y-%m', 10: '%Y-%m-%d'}
+                    parsed = datetime.strptime(date, formats[len(date)])
+                    if str(parsed.year) != str(item.get('year')):
+                        raise ValueError('Year does not match the date')
+                except (ValueError, KeyError, TypeError):
+                    self.errors.append(f"News item {i}: Invalid date (use YYYY, YYYY-MM, or YYYY-MM-DD, with a matching year)")
 
                 # Check required boolean fields
                 for field in ['visible', 'featured']:

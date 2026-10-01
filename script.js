@@ -442,7 +442,7 @@ class StatsCounter {
 class PublicationsFilter {
     constructor() {
         this.filterButtons = document.querySelectorAll('.publication-filter');
-        this.publications = document.querySelectorAll('.publication-item');
+        this.publications = document.querySelectorAll('#publications .publication-item');
         this.countElement = document.getElementById('publication-count');
         this.init();
     }
