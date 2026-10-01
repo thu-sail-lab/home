@@ -1,3 +1,5 @@
 .DS_Store
 .vscode
-.github
+_site/
+__pycache__/
+*.pyc

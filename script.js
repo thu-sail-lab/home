@@ -45,57 +45,15 @@ class Navigation {
     }
 
     setupPageNavigation() {
-        this.navLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const targetPage = link.getAttribute('data-page');
-                if (targetPage) {
-                    this.showPage(targetPage);
-                    this.updateActiveLink(link);
-
-                    // Close mobile menu if open
-                    if (this.mobileNav.classList.contains('active')) {
-                        this.mobileNav.classList.remove('active');
-                        document.body.classList.remove('mobile-nav-open');
-                        const icon = this.mobileMenuBtn.querySelector('i');
-                        icon.className = 'fas fa-bars';
-                    }
-                }
-            });
-        });
-
-        // Add event listeners for quick-nav-link elements and other data-page links
-        document.addEventListener('click', (e) => {
-            const link = e.target.closest('[data-page]');
-            if (link && !link.classList.contains('nav-links') && !link.closest('.mobile-nav-links')) {
-                e.preventDefault();
-                const targetPage = link.getAttribute('data-page');
-                if (targetPage) {
-                    this.showPage(targetPage);
-                    this.updateActiveLink(document.querySelector(`.nav-links a[data-page="${targetPage}"]`) || link);
-                }
-            }
-        });
-
-        // Show default page
-        this.showPage('home');
+        // Static pages use normal links, preserving direct URLs, back/forward,
+        // keyboard navigation, and opening a section in a new tab.
+        const currentPage = document.querySelector('.page.active');
+        if (currentPage) this.addPageAnimations(currentPage);
     }
 
     showPage(pageName) {
-        // Hide all pages
-        this.pages.forEach(page => {
-            page.classList.remove('active');
-        });
-
-        // Show target page
-        const targetPage = document.getElementById(pageName);
-        if (targetPage) {
-            targetPage.classList.add('active');
-            this.addPageAnimations(targetPage);
-        }
-
-        // Scroll to top
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        const link = document.querySelector(`a[data-page="${pageName}"]`);
+        if (link) window.location.assign(link.href);
     }
 
     updateActiveLink(activeLink) {
@@ -966,7 +924,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
+            const target = document.getElementById(this.getAttribute('href').slice(1));
             if (target) {
                 target.scrollIntoView({
                     behavior: 'smooth',

@@ -1,0 +1,32 @@
+diff --git a/_pages/about.md b/_pages/about.md
+--- a/_pages/about.md
++++ b/_pages/about.md
+@@ -1,3 +1,4 @@
+ ---
++redirect_to: https://thu-sail-lab.github.io/home/
+ permalink: /
+ title: "About our group"
+diff --git a/_pages/People.md b/_pages/People.md
+--- a/_pages/People.md
++++ b/_pages/People.md
+@@ -1,3 +1,4 @@
+ ---
++redirect_to: https://thu-sail-lab.github.io/home/team/
+ layout: archive
+ title: "Members"
+diff --git a/_pages/About the Principal.md b/_pages/About the Principal.md
+--- a/_pages/About the Principal.md
++++ b/_pages/About the Principal.md
+@@ -1,3 +1,4 @@
+ ---
++redirect_to: https://thu-sail-lab.github.io/home/team/chen-zhang/
+ layout: archive
+ title: "About the Principal"
+diff --git a/_pages/publications.md b/_pages/publications.md
+--- a/_pages/publications.md
++++ b/_pages/publications.md
+@@ -1,3 +1,4 @@
+ ---
++redirect_to: https://thu-sail-lab.github.io/home/publications/
+ layout: archive
+ title: "Publications"

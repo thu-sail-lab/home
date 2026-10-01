@@ -3686,3 +3686,8 @@ p {
         flex-direction: column;
     }
 }
+
+/* Visible bilingual affiliation and profile links. */
+.hero-affiliation { color: var(--text-secondary); line-height: 1.8; margin: 1.5rem auto; max-width: 850px; }
+.hero-affiliation a, .principal-header h3 a { color: inherit; text-decoration: none; }
+.hero-affiliation a:hover, .principal-header h3 a:hover { text-decoration: underline; }
