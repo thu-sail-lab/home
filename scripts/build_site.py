@@ -179,7 +179,9 @@ def main():
     OUTPUT.mkdir()
     for folder in ('images', 'logo'):
         shutil.copytree(ROOT/folder, OUTPUT/folder)
-    for filename in ('styles.css', 'script.js', 'publications.json'):
+    # Keep Google's ownership-verification file in every deployment.
+    for filename in ('styles.css', 'script.js', 'publications.json',
+                     'google4a9f20f35c2b9b55.html'):
         shutil.copy2(ROOT/filename, OUTPUT/filename)
     header, sections, footer = split_content((ROOT/'index.html').read_text())
     for key, (route, _, _) in PAGES.items():
