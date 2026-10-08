@@ -15,9 +15,9 @@ BASE = 'https://thu-sail-lab.github.io/home/'
 # Content stays in index.html so the existing news/publication editors keep working.
 PAGES = {
     'home': ('', 'SAIL Lab | Tsinghua University',
-             "SAIL Lab in Tsinghua University's Department of Industrial Engineering researches time-series analysis, causal inference, and industrial AI."),
+             "SAIL Lab in Tsinghua University's Department of Industrial Engineering researches time-series analysis, causal inference, and industrial superintelligence (SI)."),
     'research': ('research/', 'Research | SAIL Lab | Tsinghua University',
-                 'Explore SAIL Lab research in time-series analysis, causal inference, anomaly detection, and industrial AI at Tsinghua University.'),
+                 'Explore SAIL Lab research in time-series analysis, causal inference, anomaly detection, and industrial superintelligence (SI) at Tsinghua University.'),
     'publications': ('publications/', 'Publications | SAIL Lab | Tsinghua University',
                      'Publications by SAIL Lab researchers at Tsinghua University, with authors, venues, and available paper links.'),
     'awards': ('awards/', 'Awards | SAIL Lab | Tsinghua University',
