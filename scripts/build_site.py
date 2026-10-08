@@ -4,6 +4,7 @@ from html import escape
 from html.parser import HTMLParser
 from pathlib import Path
 import json
+import hashlib
 import re
 import shutil
 import xml.etree.ElementTree as ET
@@ -119,6 +120,9 @@ def render(header, section, footer, key):
                 tag = tag[:-1]+' aria-current="page">'
         def url(attr):
             value = attr[2]
+            if value in ('script.js', 'styles.css'):
+                version = hashlib.sha256((ROOT/value).read_bytes()).hexdigest()[:12]
+                value += '?v=' + version
             if value and not re.match(r'(?:[a-zA-Z][a-zA-Z0-9+.-]*:|/|#)', value):
                 value = prefix+value
             return attr[1]+'="'+value+'"'

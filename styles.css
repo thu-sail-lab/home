@@ -1798,51 +1798,50 @@ p {
     margin-bottom: 1rem;
 }
 
-.publication-filter {
-    transition: all 0.3s ease;
-    padding: 0.65rem 1.25rem;
-    font-size: 0.9rem;
-    font-weight: 500;
-    border: 2px solid transparent;
-}
-
-.publication-filter:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.publication-filter.active {
-    background: var(--accent-blue) !important;
-    color: white !important;
-    border-color: var(--accent-blue);
-}
-
-.publication-filter.btn-secondary {
+/* Compact, composable publication filters. */
+#publications [hidden] { display: none !important; }
+.publication-filters {
+    padding: 1.5rem;
+    margin-bottom: 2.5rem;
     background: var(--bg-secondary);
-    border-color: var(--border-primary);
+    border: 1px solid var(--border-primary);
+    border-radius: 16px;
 }
-
-/* Eerily transparent icons for publication filters */
-.publication-filter i {
-    opacity: 0.3;
-    color: var(--text-muted);
-    transition: all 0.3s ease;
-    filter: grayscale(50%);
+.publication-filter-fields { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1.25fr) minmax(110px, 0.7fr); gap: 1rem; }
+.publication-filter-fields label { display: flex; flex-direction: column; gap: 0.5rem; min-width: 0; color: var(--text-secondary); font-size: 0.85rem; font-weight: 600; }
+.publication-filter-fields input, .publication-filter-fields select {
+    width: 100%; min-width: 0; height: 46px; padding: 0 0.8rem; border-radius: 8px;
+    border: 1px solid var(--border-secondary); background: var(--bg-primary);
+    color: var(--text-primary); font: inherit; font-size: 1rem;
 }
-
-.publication-filter:hover i {
-    opacity: 0;
-    filter: grayscale(50%);
+.publication-filter-fields input::placeholder { color: var(--text-muted); }
+.publication-topics { margin-top: 1.25rem; border-top: 1px solid var(--border-primary); padding-top: 1rem; }
+.publication-topics summary { cursor: pointer; color: var(--text-primary); font-size: 0.95rem; font-weight: 600; }
+.publication-topics summary span { color: var(--accent-blue); font-size: 0.8rem; margin-left: 0.65rem; font-weight: 500; }
+.publication-topics p { font-size: 0.85rem; margin: 0.8rem 0; }
+.publication-topic-list { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.publication-topic {
+    padding: 0.5rem 0.8rem; min-height: 40px; border-radius: 8px;
+    border: 1px solid var(--border-secondary); background: var(--bg-primary);
+    color: var(--text-secondary); font: inherit; font-size: 0.85rem; cursor: pointer;
 }
-
-.publication-filter.active i {
-    opacity: 0.7;
-    color: rgba(255, 255, 255, 0.8);
-    filter: grayscale(50%);
+.publication-topic:hover { border-color: var(--accent-blue); color: var(--text-primary); }
+.publication-topic[aria-pressed="true"] { background: #2563eb; color: #fff; border-color: #2563eb; }
+.publication-filter-status { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 1.25rem; }
+.publication-filter-status p { margin: 0; font-size: 0.9rem; }
+.publication-filter-status button, .publication-empty button {
+    background: transparent; color: var(--accent-blue); border: 1px solid var(--border-secondary);
+    border-radius: 8px; padding: 0.55rem 0.9rem; font: inherit; font-size: 0.85rem; cursor: pointer;
 }
-
-.publication-item.hidden {
-    display: none;
+.publication-filter-status button:disabled { opacity: 0.4; cursor: default; }
+.publication-filters :focus-visible, .publication-empty button:focus-visible { outline: 2px solid var(--accent-blue); outline-offset: 3px; }
+.publication-empty { text-align: center; padding: 3rem 1rem; border: 1px dashed var(--border-secondary); border-radius: 16px; margin-bottom: 2rem; }
+.publication-empty h3 { margin-bottom: 0.75rem; }
+@media (max-width: 768px) {
+    .publication-filter-fields { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); }
+    .publication-search-field { grid-column: 1 / -1; }
+    .publication-filters { padding: 1rem; }
+    .publication-filter-status { flex-wrap: wrap; }
 }
 
 /* Featured Publications Styling */

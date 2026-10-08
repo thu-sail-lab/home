@@ -884,64 +884,63 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Research Publications</h2>
-                    <p>Peer-reviewed articles in top-tier journals and conferences</p>
+                    <p>Explore journal articles, conference papers, book chapters, and preprints</p>
                 </div>
 
-                <!-- Publication Categories -->
-                <div style="margin-bottom: 4rem;">
-                    <div
-                        style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem;">
-                        <button class="publication-filter btn btn-primary active" data-category="all"><i
-                                class="fas fa-list-ul"></i> All Publications</button>
-                        <button class="publication-filter btn btn-secondary" data-category="ieee"><i
-                                class="fas fa-graduation-cap"></i> IEEE Transactions</button>
-                        <button class="publication-filter btn btn-secondary" data-category="journals"><i
-                                class="fas fa-book-open"></i> Journals</button>
-                        <button class="publication-filter btn btn-secondary" data-category="conferences"><i
-                                class="fas fa-users"></i> Conferences</button>
-                        <button class="publication-filter btn btn-secondary" data-category="books"><i class="fas fa-book"></i> Book Chapters</button>
-                        <button class="publication-filter btn btn-secondary" data-category="preprints"><i class="fas fa-file-alt"></i> Preprints</button>
+                <!-- Publication filters: all records remain readable without JavaScript. -->
+                <form id="publication-filters" class="publication-filters" aria-label="Filter publications" hidden>
+                    <div class="publication-filter-fields">
+                        <label class="publication-search-field" for="publication-search">
+                            <span>Search publications</span>
+                            <input id="publication-search" type="search" placeholder="Title, author, or venue" autocomplete="off">
+                        </label>
+                        <label for="publication-type">
+                            <span>Publication type</span>
+                            <select id="publication-type">
+                                <option value="all">All types</option>
+                                <option value="journals">Journals (including IEEE)</option>
+                                <option value="ieee">IEEE journals</option>
+                                <option value="conferences">Conferences</option>
+                                <option value="books">Book chapters</option>
+                                <option value="preprints">Preprints</option>
+                            </select>
+                        </label>
+                        <label for="publication-year">
+                            <span>Year</span>
+                            <select id="publication-year"><option value="all">All years</option></select>
+                        </label>
                     </div>
-
-                    <!-- Topic Filters -->
-                    <div
-                        style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1rem;">
-                        <h4
-                            style="width: 100%; text-align: center; margin-bottom: 0.5rem; color: var(--text-secondary); font-size: 1rem;">
-                            Filter by Research Topics:</h4>
-                        <button class="publication-filter btn btn-secondary" data-category="llms"><i
-                                class="fas fa-robot"></i> LLMs</button>
-                        <button class="publication-filter btn btn-secondary" data-category="deep-learning"><i
-                                class="fas fa-brain"></i> Deep Learning</button>
-                        <button class="publication-filter btn btn-secondary" data-category="machine-learning"><i
-                                class="fas fa-cogs"></i> Machine Learning</button>
-                        <button class="publication-filter btn btn-secondary" data-category="reinforcement-learning"><i
-                                class="fas fa-sync-alt"></i> Reinforcement Learning</button>
-                        <button class="publication-filter btn btn-secondary" data-category="time-series"><i
-                                class="fas fa-chart-line"></i> Time Series</button>
-                        <button class="publication-filter btn btn-secondary" data-category="anomaly-detection"><i
-                                class="fas fa-search"></i> Anomaly Detection</button>
-                        <button class="publication-filter btn btn-secondary" data-category="causal-inference"><i
-                                class="fas fa-project-diagram"></i> Causal Inference</button>
-                        <button class="publication-filter btn btn-secondary" data-category="bayesian-methods"><i
-                                class="fas fa-calculator"></i> Bayesian Methods</button>
-                        <button class="publication-filter btn btn-secondary" data-category="tensor-methods"><i
-                                class="fas fa-cube"></i> Tensor Methods</button>
-                        <button class="publication-filter btn btn-secondary" data-category="functional-data"><i
-                                class="fas fa-wave-square"></i> Functional Data</button>
-                        <button class="publication-filter btn btn-secondary" data-category="graph-learning"><i
-                                class="fas fa-share-alt"></i> Graph Learning</button>
-                        <button class="publication-filter btn btn-secondary" data-category="statistical-modeling"><i
-                                class="fas fa-chart-bar"></i> Statistical Modeling</button>
-                        <button class="publication-filter btn btn-secondary" data-category="optimization"><i
-                                class="fas fa-bullseye"></i> Optimization</button>
-                        <button class="publication-filter btn btn-secondary" data-category="transportation"><i
-                                class="fas fa-car"></i> Transportation</button>
-                        <button class="publication-filter btn btn-secondary" data-category="manufacturing"><i
-                                class="fas fa-industry"></i> Manufacturing</button>
-                        <button class="publication-filter btn btn-secondary" data-category="medical-ai"><i
-                                class="fas fa-heartbeat"></i> Healthcare</button>
+                    <details class="publication-topics">
+                        <summary>Research topics <span id="publication-topic-summary">All topics</span></summary>
+                        <p id="publication-topic-help">Select one or more topics. Results must match every selected topic.</p>
+                        <div class="publication-topic-list" role="group" aria-label="Research topics" aria-describedby="publication-topic-help">
+                                <button type="button" class="publication-topic" data-topic="llms" aria-pressed="false">LLMs</button>
+                                <button type="button" class="publication-topic" data-topic="deep-learning" aria-pressed="false">Deep Learning</button>
+                                <button type="button" class="publication-topic" data-topic="machine-learning" aria-pressed="false">Machine Learning</button>
+                                <button type="button" class="publication-topic" data-topic="reinforcement-learning" aria-pressed="false">Reinforcement Learning</button>
+                                <button type="button" class="publication-topic" data-topic="time-series" aria-pressed="false">Time Series</button>
+                                <button type="button" class="publication-topic" data-topic="anomaly-detection" aria-pressed="false">Anomaly Detection</button>
+                                <button type="button" class="publication-topic" data-topic="causal-inference" aria-pressed="false">Causal Inference</button>
+                                <button type="button" class="publication-topic" data-topic="bayesian-methods" aria-pressed="false">Bayesian Methods</button>
+                                <button type="button" class="publication-topic" data-topic="tensor-methods" aria-pressed="false">Tensor Methods</button>
+                                <button type="button" class="publication-topic" data-topic="functional-data" aria-pressed="false">Functional Data</button>
+                                <button type="button" class="publication-topic" data-topic="graph-learning" aria-pressed="false">Graph Learning</button>
+                                <button type="button" class="publication-topic" data-topic="statistical-modeling" aria-pressed="false">Statistical Modeling</button>
+                                <button type="button" class="publication-topic" data-topic="optimization" aria-pressed="false">Optimization</button>
+                                <button type="button" class="publication-topic" data-topic="transportation" aria-pressed="false">Transportation</button>
+                                <button type="button" class="publication-topic" data-topic="manufacturing" aria-pressed="false">Manufacturing</button>
+                                <button type="button" class="publication-topic" data-topic="medical-ai" aria-pressed="false">Healthcare</button>
+                        </div>
+                    </details>
+                    <div class="publication-filter-status">
+                        <p id="publication-results-status" role="status" aria-live="polite" aria-atomic="true"></p>
+                        <button id="publication-reset" type="reset">Clear filters</button>
                     </div>
+                </form>
+                <div id="publication-empty" class="publication-empty" hidden>
+                    <h3>No matching publications</h3>
+                    <p>Try fewer topics, a different year, or a shorter search.</p>
+                    <button id="publication-empty-reset" type="button">Show all publications</button>
                 </div>
 
                 <!-- 2026 Publications -->

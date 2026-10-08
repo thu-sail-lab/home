@@ -399,76 +399,112 @@ class StatsCounter {
 // Research Publications Filter
 class PublicationsFilter {
     constructor() {
-        this.filterButtons = document.querySelectorAll('.publication-filter');
-        this.publications = document.querySelectorAll('#publications .publication-item');
-        this.countElement = document.getElementById('publication-count');
-        this.init();
-    }
-
-    init() {
-        if (this.filterButtons.length > 0) {
-            this.setupFilters();
-            this.updateCount('all');
-        }
-    }
-
-    setupFilters() {
-        this.filterButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const filter = button.getAttribute('data-category');
-                this.filterPublications(filter);
-                this.updateActiveFilter(button);
-                this.updateCount(filter);
-            });
+        this.form = document.getElementById('publication-filters');
+        if (!this.form) return;
+        this.search = document.getElementById('publication-search');
+        this.type = document.getElementById('publication-type');
+        this.year = document.getElementById('publication-year');
+        this.status = document.getElementById('publication-results-status');
+        this.reset = document.getElementById('publication-reset');
+        this.empty = document.getElementById('publication-empty');
+        this.topicSummary = document.getElementById('publication-topic-summary');
+        this.topicButtons = [...this.form.querySelectorAll('[data-topic]')];
+        this.topics = new Set();
+        this.publications = [...document.querySelectorAll('#publications .publication-item')].map(element => ({
+            element,
+            year: element.dataset.year,
+            type: element.dataset.category,
+            text: this.normalize([...element.querySelectorAll('.publication-title, .publication-authors, .publication-venue')]
+                .map(node => node.textContent).join(' '))
+        }));
+        this.groups = [...document.querySelectorAll('#publications .publications-list')].map(list => list.parentElement);
+        [...new Set(this.publications.map(pub => pub.year))].sort((a, b) => Number(b) - Number(a)).forEach(year => {
+            this.year.add(new Option(year, year));
         });
+        this.form.addEventListener('submit', event => event.preventDefault());
+        this.search.addEventListener('input', () => this.apply());
+        this.type.addEventListener('change', () => this.apply());
+        this.year.addEventListener('change', () => this.apply());
+        this.topicButtons.forEach(button => button.addEventListener('click', () => {
+            const topic = button.dataset.topic;
+            if (this.topics.has(topic)) this.topics.delete(topic);
+            else this.topics.add(topic);
+            this.apply();
+        }));
+        this.form.addEventListener('reset', event => {
+            event.preventDefault();
+            this.clear();
+        });
+        document.getElementById('publication-empty-reset').addEventListener('click', () => {
+            this.clear();
+            this.search.focus();
+        });
+        window.addEventListener('popstate', () => { this.restore(); this.apply(false); });
+        this.restore();
+        this.apply(false);
+        this.form.hidden = false;
     }
 
-    filterPublications(filter) {
-        let visibleCount = 0;
-        this.publications.forEach(publication => {
-            const categories = publication.getAttribute('data-category');
-            
-            // Check if publication matches filter
-            let matches = false;
-            
-            if (filter === 'all') {
-                matches = true;
-            } else if (categories === filter) {
-                // Traditional category matching (ieee, journals, conferences)
-                matches = true;
-            } else if (publication.hasAttribute(`data-${filter}`)) {
-                // Topic-based filtering using data-{topic}="true" attributes
-                matches = publication.getAttribute(`data-${filter}`) === 'true';
-            }
+    normalize(value) {
+        return value.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+            .replace(/[\u2010-\u2015]/g, '-').replace(/\s+/g, ' ').trim();
+    }
 
+    restore() {
+        const params = new URLSearchParams(window.location.search);
+        this.search.value = params.get('q') || '';
+        this.type.value = [...this.type.options].some(option => option.value === params.get('type')) ? params.get('type') : 'all';
+        this.year.value = [...this.year.options].some(option => option.value === params.get('year')) ? params.get('year') : 'all';
+        const knownTopics = new Set(this.topicButtons.map(button => button.dataset.topic));
+        this.topics = new Set(params.getAll('topic').filter(topic => knownTopics.has(topic)));
+        if (this.topics.size) this.form.querySelector('details').open = true;
+    }
+
+    clear() {
+        this.search.value = '';
+        this.type.value = 'all';
+        this.year.value = 'all';
+        this.topics.clear();
+        this.apply();
+    }
+
+    apply(updateURL = true) {
+        const words = this.normalize(this.search.value).split(/\s+/).filter(Boolean);
+        let count = 0;
+        this.publications.forEach(pub => {
+            // IEEE journal records belong to the broader Journals category too.
+            const matchesType = this.type.value === 'all' || pub.type === this.type.value ||
+                (this.type.value === 'journals' && pub.type === 'ieee');
+            // Short names such as Bo, Li, and An should match whole words.
+            const searchWords = pub.text.split(/[^\p{L}\p{N}]+/u);
+            const matches = matchesType && (this.year.value === 'all' || pub.year === this.year.value) &&
+                words.every(word => word.length < 3 ? searchWords.includes(word) : pub.text.includes(word)) &&
+                [...this.topics].every(topic => pub.element.getAttribute(`data-${topic}`) === 'true');
+            pub.element.hidden = !matches;
             if (matches) {
-                publication.style.display = 'block';
-                publication.classList.add('fade-in');
-                visibleCount++;
-            } else {
-                publication.style.display = 'none';
-                publication.classList.remove('fade-in');
+                count++;
+                pub.element.classList.add('visible');
             }
         });
-    }
-
-    updateActiveFilter(activeButton) {
-        this.filterButtons.forEach(button => {
-            button.classList.remove('active');
-            button.classList.remove('btn-primary');
-            button.classList.add('btn-secondary');
+        this.groups.forEach(group => {
+            group.hidden = ![...group.querySelectorAll('.publication-item')].some(item => !item.hidden);
+            const heading = group.querySelector('h3');
+            if (heading && !group.hidden) heading.classList.add('visible');
         });
-        activeButton.classList.add('active');
-        activeButton.classList.remove('btn-secondary');
-        activeButton.classList.add('btn-primary');
-    }
-
-    updateCount(filter) {
-        if (this.countElement) {
-            const visiblePubs = Array.from(this.publications).filter(pub => 
-                pub.style.display !== 'none'
-            );
-            this.countElement.textContent = visiblePubs.length;
+        this.topicButtons.forEach(button => button.setAttribute('aria-pressed', String(this.topics.has(button.dataset.topic))));
+        this.topicSummary.textContent = this.topics.size ? `${this.topics.size} selected` : 'All topics';
+        this.status.textContent = `Showing ${count} of ${this.publications.length} publications`;
+        this.empty.hidden = count !== 0;
+        this.reset.disabled = !words.length && this.type.value === 'all' && this.year.value === 'all' && !this.topics.size;
+        if (updateURL) {
+            // Keep filter state in the URL so a filtered reading list can be shared.
+            const url = new URL(window.location.href);
+            ['q', 'type', 'year', 'topic'].forEach(key => url.searchParams.delete(key));
+            if (this.search.value.trim()) url.searchParams.set('q', this.search.value.trim());
+            if (this.type.value !== 'all') url.searchParams.set('type', this.type.value);
+            if (this.year.value !== 'all') url.searchParams.set('year', this.year.value);
+            this.topics.forEach(topic => url.searchParams.append('topic', topic));
+            window.history.replaceState(null, '', url);
         }
     }
 }
