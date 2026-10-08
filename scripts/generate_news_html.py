@@ -66,8 +66,8 @@ def generate_news_section_html(news_data: List[Dict]) -> str:
         <section class="section">
             <div class="container">
                 <div class="section-header">
-                    <h2><i class="fas fa-newspaper"></i> Lab News</h2>
-                    <p>Latest announcements and updates from our research lab</p>
+                    <span class="home-eyebrow">From the lab</span><h2>Latest news</h2>
+                    <p>Paper acceptances, research milestones, and lab updates.</p>
                 </div>
 
                 <!-- Recent News (Always Visible) -->
@@ -78,7 +78,7 @@ def generate_news_section_html(news_data: List[Dict]) -> str:
 
                     <!-- Toggle Button -->
                     <div class="news-toggle-container">
-                        <button id="news-toggle-btn" class="btn btn-secondary news-toggle-btn">
+                        <button id="news-toggle-btn" aria-controls="news-past" aria-expanded="false" class="btn btn-secondary news-toggle-btn">
                             <i class="fas fa-chevron-down"></i>
                             Show Past Announcements
                         </button>

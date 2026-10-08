@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420" fill="none">
+<defs><linearGradient id="flow" x1="20" y1="80" x2="470" y2="340" gradientUnits="userSpaceOnUse"><stop stop-color="#4a9eff"/><stop offset="1" stop-color="#aaa1ff"/></linearGradient><radialGradient id="glow"><stop stop-color="#4a9eff" stop-opacity=".13"/><stop offset="1" stop-color="#4a9eff" stop-opacity="0"/></radialGradient><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#63778c" opacity=".24"/></pattern></defs>
+<rect width="520" height="420" fill="url(#dots)"/><ellipse cx="292" cy="215" rx="220" ry="195" fill="url(#glow)"/>
+<g stroke="#3c5067" stroke-width="1"><path d="M145 117C201 117 186 166 237 166M145 210H237M145 303C204 303 193 258 237 258M323 166C370 166 373 118 420 118M323 210H420M323 258C370 258 372 303 420 303"/></g>
+<g stroke="url(#flow)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M20 117H34L42 103L53 133L65 88L78 147L92 106L103 121L116 111L130 117H145"/><path d="M20 210H41L53 202L66 216L77 187L91 230L103 205L117 211H145"/><path d="M20 303H42L54 292L68 311L84 280L98 322L110 291L123 303H145"/>
+<path d="M237 166L280 112L323 166L280 210L237 166L237 258L280 312L323 258L323 166M237 258L280 210L323 258M280 112V312" opacity=".7"/>
+</g>
+<g fill="#101821" stroke="#79b6ff" stroke-width="2"><circle cx="237" cy="166" r="8"/><circle cx="280" cy="112" r="6"/><circle cx="323" cy="166" r="8"/><circle cx="237" cy="258" r="8"/><circle cx="280" cy="312" r="6"/><circle cx="323" cy="258" r="8"/></g>
+<circle cx="280" cy="210" r="24" fill="#15263b" stroke="#619fff"/><circle cx="280" cy="210" r="7" fill="#91bfff"/>
+<g fill="#9bb3c9"><circle cx="145" cy="117" r="3"/><circle cx="145" cy="210" r="3"/><circle cx="145" cy="303" r="3"/></g>
+<g stroke="#b0a5ff" stroke-width="2"><circle cx="434" cy="118" r="14"/><circle cx="434" cy="210" r="14"/><circle cx="434" cy="303" r="14"/><path d="m428 118 4 4 8-9m-12 97 4 4 8-9m-12 98 4 4 8-9" stroke-linecap="round" stroke-linejoin="round"/></g>
+<g fill="#a8bacd" font-family="Arial,sans-serif" font-size="12" letter-spacing="2"><text x="20" y="52">SIGNALS</text><text x="235" y="52">MODELS</text><text x="391" y="52">DECISIONS</text></g>
+<path d="M20 366H473" stroke="#334152"/><g fill="#8499ad" font-family="Arial,sans-serif" font-size="11"><text x="20" y="390">Observe patterns</text><text x="217" y="390">Learn relationships</text><text x="392" y="390">Guide action</text></g>
+</svg>

@@ -68,138 +68,39 @@
 
     <!-- HOME PAGE -->
     <div id="home" class="page active">
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-container">
-                <h1>Superintelligence And Industrial Lab</h1>
-                <p class="hero-affiliation">SAIL Lab · Department of Industrial Engineering, Tsinghua University<br>
-                    <span lang="zh-CN">清华大学工业工程系 · 超级智能与工业工程实验室</span>
-                </p>
-                <p class="hero-subtitle">Advancing Superintelligence for Systems Informatics and Data Analytics</p>
-                <p class="hero-description">
-                    We advance research in superintelligence (SI) for systems informatics and industrial data analytics.
-                    By combining statistics and machine learning, we develop methods for information extraction,
-                    change detection, adaptive sampling, and decision-making in complex systems, with applications
-                    in manufacturing and transportation.
-                </p>
-                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                    <a href="research/" class="btn btn-primary" data-page="research">
-                        <i class="fas fa-flask"></i>
-                        Explore Research
-                    </a>
-                    <a href="publications/" class="btn btn-primary" data-page="publications">
-                        <i class="fas fa-book-open"></i>
-                        View Publications
-                    </a>
-                    <a href="team/" class="btn btn-primary" data-page="team">
-                        <i class="fas fa-users"></i>
-                        Meet Our Team
-                    </a>
+        <section class="home-hero" aria-labelledby="home-title">
+            <div class="container home-hero-grid">
+                <div class="home-intro">
+                    <p class="home-eyebrow">SAIL · Tsinghua University</p>
+                    <p class="home-lab-name">Superintelligence And Industrial Lab</p>
+                    <h1 id="home-title">Superintelligence<br>for <span>complex systems.</span></h1>
+                    <p class="home-lead">We advance research in superintelligence (SI), combining statistics and machine learning to understand complex data and guide better decisions.</p>
+                    <p class="home-affiliation">Department of Industrial Engineering<br><span lang="zh-CN">清华大学工业工程系 · 超级智能与工业工程实验室</span></p>
+                    <div class="home-actions">
+                        <a class="home-primary-link" href="research/">Explore our research <span aria-hidden="true">↗</span></a>
+                        <a class="home-text-link" href="publications/">Read our publications <span aria-hidden="true">→</span></a>
+                    </div>
                 </div>
+                <figure class="home-research-figure">
+                    <img src="images/home-research.svg" width="520" height="420" alt="Research connects complex signals through statistical and learning models to informed decisions.">
+                    <figcaption>From complex signals to informed decisions.</figcaption>
+                </figure>
             </div>
         </section>
 
-        <!-- Research Overview -->
-        <section class="section">
+        <div class="container home-at-a-glance" aria-label="Explore SAIL Lab">
+            <a href="publications/"><strong>81</strong><span>Research publications</span><span aria-hidden="true">↗</span></a>
+            <a href="team/"><strong>16</strong><span>Active researchers</span><span aria-hidden="true">↗</span></a>
+            <a href="opensource/"><strong class="home-open-label">Open research</strong><span>Explore our code</span><span aria-hidden="true">↗</span></a>
+        </div>
+
+        <section class="home-research home-block" aria-labelledby="home-research-heading">
             <div class="container">
-                <div class="section-header">
-                    <h2>Research Excellence</h2>
-                    <p>Advancing superintelligence (SI) through statistics, machine learning, and deep learning</p>
-                </div>
-
-                <div class="card-grid">
-                    <div class="card">
-                        <div class="card-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                            </svg>
-                        </div>
-                        <h3>High-Dimensional Analytics for SI</h3>
-                        <p>Leveraging advanced machine learning for effective information extraction, online change
-                            detection, and adaptive sampling in high-dimensional structured data. Our models handle
-                            complex patterns in real-time streaming data with unprecedented accuracy.</p>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                                <path
-                                    d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 3.5C14.6 3.3 14.2 3.3 13.8 3.5L8 7V9L12 11L21 9ZM3 13.5L9 11L12 12.5L18 11V13.5L12 16L3 13.5Z" />
-                            </svg>
-                        </div>
-                        <h3>Deep Learning & Foundation Models</h3>
-                        <p>Developing next-generation deep learning architectures for time series forecasting,
-                            multimodal learning, and large language models. Our research spans functional data analysis,
-                            tensor decomposition, and specialized domain foundation models.</p>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                                <path d="M12 2L13.41 8.41L20 10L13.41 11.59L12 18L10.59 11.59L4 10L10.59 8.41L12 2Z" />
-                            </svg>
-                        </div>
-                        <h3>Intelligent Decision & Control Systems</h3>
-                        <p>Decision-making frameworks for SI integrating game theory, optimization algorithms, and
-                            data-driven control for complex networked systems. Our methods combine domain knowledge with
-                            reinforcement learning.</p>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                                <path d="M7 2V13H10V22L17 10H13L17 2H7Z" />
-                            </svg>
-                        </div>
-                        <h3>Industrial Superintelligence Applications</h3>
-                        <p>Exploring industrial superintelligence—from semiconductor manufacturing quality prediction to
-                            aircraft production optimization, urban transportation intelligence, and supply chain
-                            resilience using state-of-the-art machine learning.</p>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                                <path d="M3 3H21V21H3V3ZM9 17H7V10H9V17ZM13 17H11V7H13V17ZM17 17H15V13H17V17Z" />
-                            </svg>
-                        </div>
-                        <h3>Advanced Statistical Learning</h3>
-                        <p>Statistical learning for SI—developing robust monitoring frameworks for complex systems
-                            through Bayesian networks, Gaussian processes, tensor learning, and graph neural networks
-                            for anomaly detection and predictive maintenance.</p>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                                <path
-                                    d="M12 2C6.48 2 2 6.48 2 12S6.48 22 12 22 22 17.52 22 12 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20ZM12 6C9.79 6 8 7.79 8 10S9.79 14 12 14 16 12.21 16 10 14.21 6 12 6Z" />
-                            </svg>
-                        </div>
-                        <h3>Graph & Network Intelligence</h3>
-                        <p>Pioneering graph relational learning and network analysis using GNNs for spatiotemporal
-                            prediction, community detection in functional data networks, and intelligent modeling of
-                            metro passenger flows and traffic systems.</p>
-                    </div>
-                </div>
-
-                <!-- Research Navigation -->
-                <div style="text-align: center; margin-top: 3rem;">
-                    <h3 style="margin-bottom: 1.5rem; color: var(--text-primary);">Explore Our Research Areas</h3>
-                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                        <a href="research/" class="btn btn-primary" data-page="research">
-                            <i class="fas fa-microscope"></i>
-                            Detailed Research
-                        </a>
-                        <a href="publications/" class="btn btn-primary" data-page="publications">
-                            <i class="fas fa-file-alt"></i>
-                            Research Papers
-                        </a>
-                        <a href="partners/" class="btn btn-primary" data-page="partners">
-                            <i class="fas fa-handshake"></i>
-                            Industry Partnerships
-                        </a>
-                    </div>
+                <div class="home-section-heading"><div><p class="home-eyebrow">Research directions</p><h2 id="home-research-heading">Understand. Learn. Decide.</h2></div><a class="home-text-link" href="research/">All research <span aria-hidden="true">→</span></a></div>
+                <div class="home-research-directions">
+                    <article><span class="home-direction-number">01 / Understand</span><h3>Signals &amp; structures</h3><p>Time series, anomaly detection, and causal inference reveal patterns and relationships in complex systems.</p><a href="publications/?topic=time-series" class="home-text-link">Explore time-series research <span aria-hidden="true">↗</span></a></article>
+                    <article><span class="home-direction-number">02 / Learn</span><h3>Models that generalize</h3><p>Foundation models, multimodal learning, and statistical methods connect knowledge across data and domains.</p><a href="publications/?q=foundation" class="home-text-link">Explore foundation models <span aria-hidden="true">↗</span></a></article>
+                    <article><span class="home-direction-number">03 / Decide</span><h3>Intelligence in action</h3><p>Adaptive sampling, optimization, and control turn insights into decisions for manufacturing, transportation, and healthcare.</p><a href="publications/?topic=optimization" class="home-text-link">Explore decision methods <span aria-hidden="true">↗</span></a></article>
                 </div>
             </div>
         </section>
@@ -208,8 +109,8 @@
         <section class="section">
             <div class="container">
                 <div class="section-header">
-                    <h2><i class="fas fa-newspaper"></i> Lab News</h2>
-                    <p>Latest announcements and updates from our research lab</p>
+                    <span class="home-eyebrow">From the lab</span><h2>Latest news</h2>
+                    <p>Paper acceptances, research milestones, and lab updates.</p>
                 </div>
 
                 <!-- Recent News (Always Visible) -->
@@ -294,7 +195,7 @@
 
                     <!-- Toggle Button -->
                     <div class="news-toggle-container">
-                        <button id="news-toggle-btn" class="btn btn-secondary news-toggle-btn">
+                        <button id="news-toggle-btn" aria-controls="news-past" aria-expanded="false" class="btn btn-secondary news-toggle-btn">
                             <i class="fas fa-chevron-down"></i>
                             Show Past Announcements
                         </button>
@@ -484,187 +385,56 @@
         </section>
 
         <!-- Recent Publications -->
-        <section class="section">
+        <section class="home-publications home-block" aria-labelledby="home-publications-heading">
             <div class="container">
-                <div class="section-header"><h2>Recent Publications</h2><p>Highlights from our latest research contributions</p></div>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 1.5rem; max-width: 1200px; margin: 0 auto;">
-                        <div class="publication-item" style="padding: 1.2rem; border-radius: 10px; min-height: 200px; display: flex; flex-direction: column;">
-                            <div class="publication-vertical-content">
-                                <div class="publication-title">A Computer-Aided System for Enhanced M-protein Diagnosis and Monitoring via Multimodal Learning</div>
-                                <div class="publication-authors">An, X.; Li, P.*; Han, J.; Ji, W.; Di, Q.; Liang, Y.; Hou, Y.; Sha, Y.; Su, W.; Qiu, L.; Zhang, C.*</div>
-                                <div class="publication-venue">2026 · Nature Communications — accepted</div>
-                                
-                                <div class="publication-meta-row"><span class="publication-links">
-                                    <span class="publication-status">Paper link forthcoming</span>
-                                </span></div>
-                            </div>
-                        </div>
-                        <div class="publication-item" style="padding: 1.2rem; border-radius: 10px; min-height: 200px; display: flex; flex-direction: column;">
-                            <div class="publication-vertical-content">
-                                <div class="publication-title">VETime: Vision Enhanced Zero-Shot Time Series Anomaly Detection</div>
-                                <div class="publication-authors">Yingyuan Yang, Tian Lan, Yifei Gao, Yimeng Lu, Wenjun He, Meng Wang, Chenghao Liu, Chen Zhang</div>
-                                <div class="publication-venue">2026 · NeurIPS 2026 — accepted</div>
-                                
-                                <div class="publication-meta-row"><span class="publication-links">
-                                    <a href="https://arxiv.org/abs/2602.16681" class="btn btn-small" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> arXiv</a>
-                                    <a href="https://github.com/yyyangcoder/VETime" class="btn btn-small" target="_blank" rel="noopener noreferrer"><i class="fas fa-code"></i> Code</a>
-                                </span></div>
-                            </div>
-                        </div>
-                        <div class="publication-item" style="padding: 1.2rem; border-radius: 10px; min-height: 200px; display: flex; flex-direction: column;">
-                            <div class="publication-vertical-content">
-                                <div class="publication-title">Supervision Recovery for Time Series Anomaly Detection via Counterfactual Pairing</div>
-                                <div class="publication-authors">Yifei Gao, Tian Lan, Yimeng Lu, Xuming An, Meng Wang, Wenjun He, Yijie Li, Chen Zhang</div>
-                                <div class="publication-venue">2026 · NeurIPS 2026 — accepted</div>
-                                <div class="publication-note">Preprint title: Supervision Recovery for Time Series Anomaly Detection via Context-Anchored Pairing.</div>
-                                <div class="publication-meta-row"><span class="publication-links">
-                                    <a href="https://openreview.net/forum?id=YqBYI9KKtm" class="btn btn-small" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> OpenReview</a>
-                                    <a href="https://arxiv.org/abs/2609.33610" class="btn btn-small" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> arXiv</a>
-                                </span></div>
-                            </div>
-                        </div>
-                        <div class="publication-item" style="padding: 1.2rem; border-radius: 10px; min-height: 200px; display: flex; flex-direction: column;">
-                            <div class="publication-vertical-content">
-                                <div class="publication-title">Learning Collision-Free Dispatch Policies for Route-Wise Decision-Dependent Anomaly Detection</div>
-                                <div class="publication-authors">Xa, X.; Zhang, C.; Liu, K.*</div>
-                                <div class="publication-venue">2026 · NeurIPS 2026 — accepted</div>
-                                
-                                <div class="publication-meta-row"><span class="publication-links">
-                                    <a href="https://openreview.net/forum?id=s01jPERPlb" class="btn btn-small" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> OpenReview</a>
-                                </span></div>
-                            </div>
-                        </div>
-                        <div class="publication-item" style="padding: 1.2rem; border-radius: 10px; min-height: 200px; display: flex; flex-direction: column;">
-                            <div class="publication-vertical-content">
-                                <div class="publication-title">Quickest Causal Change Point Detection by Adaptive Intervention</div>
-                                <div class="publication-authors">Haijie Xu, Chen Zhang</div>
-                                <div class="publication-venue">2026 · IEEE Transactions on Pattern Analysis and Machine Intelligence — accepted</div>
-                                
-                                <div class="publication-meta-row"><span class="publication-links">
-                                    <a href="https://arxiv.org/abs/2506.07760" class="btn btn-small" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> arXiv</a>
-                                </span></div>
-                            </div>
-                        </div>
-                        <div class="publication-item" style="padding: 1.2rem; border-radius: 10px; min-height: 200px; display: flex; flex-direction: column;">
-                            <div class="publication-vertical-content">
-                                <div class="publication-title">SCALE: Style-Causal Disentanglement with Adaptive Lifelong Expert for Online Latent-domain Anomaly Detection</div>
-                                <div class="publication-authors">Yimeng Lu, Yifei Gao, Tian Lan, Yingyuan Yang, Wenjun He, Meng Wang, Chen Zhang</div>
-                                <div class="publication-venue">2026 · Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2, 3436-3447</div>
-                                
-                                <div class="publication-meta-row"><span class="publication-links">
-                                    <a href="https://doi.org/10.1145/3770855.3817912" class="btn btn-small" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Paper</a>
-                                </span></div>
-                            </div>
-                        </div>
-                </div>
-                <div style="text-align: center; margin-top: 2rem;"><a href="publications/" class="btn btn-primary" data-page="publications">View All Publications (81)</a></div>
+                <div class="home-section-heading"><div><p class="home-eyebrow">Research in focus</p><h2 id="home-publications-heading">Recent publications</h2></div><a class="home-text-link" href="publications/">Browse all 81 papers <span aria-hidden="true">→</span></a></div>
+                <ol class="home-paper-list">
+                        <li class="home-paper">
+                            <span class="home-paper-number">01</span>
+                            <div><p class="home-paper-venue">2026 · Nature Communications — accepted</p>
+                                <h3><a href="publications/#publication-m-protein">A Computer-Aided System for Enhanced M-protein Diagnosis and Monitoring via Multimodal Learning</a></h3></div>
+                            <a class="home-paper-arrow" href="publications/#publication-m-protein" aria-label="View publication: A Computer-Aided System for Enhanced M-protein Diagnosis and Monitoring via Multimodal Learning">↗</a>
+                        </li>
+                        <li class="home-paper">
+                            <span class="home-paper-number">02</span>
+                            <div><p class="home-paper-venue">2026 · NeurIPS 2026 — accepted</p>
+                                <h3><a href="publications/#publication-vetime">VETime: Vision Enhanced Zero-Shot Time Series Anomaly Detection</a></h3></div>
+                            <a class="home-paper-arrow" href="publications/#publication-vetime" aria-label="View publication: VETime: Vision Enhanced Zero-Shot Time Series Anomaly Detection">↗</a>
+                        </li>
+                        <li class="home-paper">
+                            <span class="home-paper-number">03</span>
+                            <div><p class="home-paper-venue">2026 · NeurIPS 2026 — accepted</p>
+                                <h3><a href="publications/#publication-recovery">Supervision Recovery for Time Series Anomaly Detection via Counterfactual Pairing</a></h3></div>
+                            <a class="home-paper-arrow" href="publications/#publication-recovery" aria-label="View publication: Supervision Recovery for Time Series Anomaly Detection via Counterfactual Pairing">↗</a>
+                        </li>
+                        <li class="home-paper">
+                            <span class="home-paper-number">04</span>
+                            <div><p class="home-paper-venue">2026 · NeurIPS 2026 — accepted</p>
+                                <h3><a href="publications/#publication-collision">Learning Collision-Free Dispatch Policies for Route-Wise Decision-Dependent Anomaly Detection</a></h3></div>
+                            <a class="home-paper-arrow" href="publications/#publication-collision" aria-label="View publication: Learning Collision-Free Dispatch Policies for Route-Wise Decision-Dependent Anomaly Detection">↗</a>
+                        </li>
+                        <li class="home-paper">
+                            <span class="home-paper-number">05</span>
+                            <div><p class="home-paper-venue">2026 · IEEE Transactions on Pattern Analysis and Machine Intelligence — accepted</p>
+                                <h3><a href="publications/#publication-15">Quickest Causal Change Point Detection by Adaptive Intervention</a></h3></div>
+                            <a class="home-paper-arrow" href="publications/#publication-15" aria-label="View publication: Quickest Causal Change Point Detection by Adaptive Intervention">↗</a>
+                        </li>
+                        <li class="home-paper">
+                            <span class="home-paper-number">06</span>
+                            <div><p class="home-paper-venue">2026 · Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2, 3436-3447</p>
+                                <h3><a href="publications/#publication-scale">SCALE: Style-Causal Disentanglement with Adaptive Lifelong Expert for Online Latent-domain Anomaly Detection</a></h3></div>
+                            <a class="home-paper-arrow" href="publications/#publication-scale" aria-label="View publication: SCALE: Style-Causal Disentanglement with Adaptive Lifelong Expert for Online Latent-domain Anomaly Detection">↗</a>
+                        </li>
+                </ol>
             </div>
         </section>
 
-    <!-- Statistics -->
-    <section class="section">
-        <div class="container">
-            <div class="stats-section">
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <h3 class="stat-number">16</h3>
-                        <p>Active Researchers</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3 class="stat-number">81</h3>
-                        <p>Publications</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3 class="stat-number">6</h3>
-                        <p>Elite Industry Partners</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3 class="stat-number">867</h3>
-                        <p>Total Citations</p>
-                    </div>
-                </div>
+        <section class="home-join home-block" aria-labelledby="home-join-heading">
+            <div class="container home-join-content"><div><p class="home-eyebrow">Work with us</p><h2 id="home-join-heading">Ideas grow through collaboration.</h2><p>Explore research opportunities and collaborations in superintelligence and industrial systems.</p></div>
+                <div class="home-join-actions"><a class="home-primary-link" href="contact/">Get in touch <span aria-hidden="true">↗</span></a><a class="home-text-link" href="team/">Meet the team <span aria-hidden="true">→</span></a></div>
             </div>
-
-
-            <!-- Call to Action Section -->
-            <div style="margin-top: 5rem;">
-                <div style="text-align: center; margin-bottom: 3rem;">
-                    <h3 style="color: var(--text-primary); font-size: 2rem; margin-bottom: 1rem;">Ready to Collaborate?
-                    </h3>
-                    <p style="color: var(--text-secondary); font-size: 1.2rem; max-width: 600px; margin: 0 auto;">
-                        Join our mission to advance superintelligence (SI) through research and industrial
-                        applications.
-                    </p>
-                </div>
-
-                <div class="cta-cards-container">
-                    <div class="cta-card">
-                        <i class="fas fa-graduation-cap"
-                            style="font-size: 3rem; color: var(--accent-blue); margin-bottom: 1rem;"></i>
-                        <h4 style="color: var(--text-primary); margin-bottom: 1rem;">Join Our Team</h4>
-                        <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Explore PhD, postdoc, and
-                            research opportunities</p>
-                        <a href="contact/" class="btn btn-primary" data-page="contact">
-                            <i class="fas fa-envelope"></i>
-                            Apply Now
-                        </a>
-                    </div>
-
-                    <div class="cta-card">
-                        <i class="fas fa-lightbulb"
-                            style="font-size: 3rem; color: var(--accent-blue); margin-bottom: 1rem;"></i>
-                        <h4 style="color: var(--text-primary); margin-bottom: 1rem;">Latest Research</h4>
-                        <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Discover our recent publications
-                            and breakthroughs</p>
-                        <a href="publications/" class="btn btn-primary" data-page="publications">
-                            <i class="fas fa-book"></i>
-                            Read Papers
-                        </a>
-                    </div>
-
-                    <div class="cta-card">
-                        <i class="fab fa-github"
-                            style="font-size: 3rem; color: var(--accent-blue); margin-bottom: 1rem;"></i>
-                        <h4 style="color: var(--text-primary); margin-bottom: 1rem;">Open Source Code</h4>
-                        <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Explore our research
-                            implementations and contribute to our projects</p>
-                        <a href="opensource/" class="btn btn-primary" data-page="opensource">
-                            <i class="fab fa-github"></i>
-                            View Code
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Quick Links -->
-                <div style="text-align: center;">
-                    <h4 style="color: var(--text-primary); margin-bottom: 1.5rem;">Quick Navigation</h4>
-                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                        <a href="research/" data-page="research" class="quick-nav-link">
-                            <i class="fas fa-flask"></i> Research Areas
-                        </a>
-                        <a href="publications/" data-page="publications" class="quick-nav-link">
-                            <i class="fas fa-file-alt"></i> Publications
-                        </a>
-                        <a href="team/" data-page="team" class="quick-nav-link">
-                            <i class="fas fa-users"></i> Meet the Team
-                        </a>
-                        <a href="partners/" data-page="partners" class="quick-nav-link">
-                            <i class="fas fa-handshake"></i> Partners
-                        </a>
-                        <a href="opensource/" data-page="opensource" class="quick-nav-link">
-                            <i class="fab fa-github"></i> Open Source
-                        </a>
-                        <a href="contact/" data-page="contact" class="quick-nav-link">
-                            <i class="fas fa-envelope"></i> Contact Us
-                        </a>
-                    </div>
-                </div>
-            </div> <!-- ✅ close CTA wrapper -->
-
-        </div> <!-- ✅ close container -->
-    </section>
-
-    </div> <!-- ✅ close HOME PAGE -->
+        </section>
+    </div>
 
     <!-- RESEARCH PAGE -->
     <div id="research" class="page">

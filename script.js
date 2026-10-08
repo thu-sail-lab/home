@@ -744,6 +744,7 @@ class NewsToggle {
     showPastNews() {
         // Update button appearance
         this.toggleBtn.classList.add('expanded');
+        this.toggleBtn.setAttribute('aria-expanded', 'true');
         this.toggleBtn.innerHTML = '<i class="fas fa-chevron-up"></i> Hide Past Announcements';
 
         // Show past news with animation
@@ -759,6 +760,7 @@ class NewsToggle {
     hidePastNews() {
         // Update button appearance
         this.toggleBtn.classList.remove('expanded');
+        this.toggleBtn.setAttribute('aria-expanded', 'false');
         this.toggleBtn.innerHTML = '<i class="fas fa-chevron-down"></i> Show Past Announcements';
 
         // Remove show class
