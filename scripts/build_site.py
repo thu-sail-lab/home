@@ -14,20 +14,20 @@ OUTPUT = ROOT / '_site'
 BASE = 'https://thu-sail-lab.github.io/home/'
 # Content stays in index.html so the existing news/publication editors keep working.
 PAGES = {
-    'home': ('', 'SAIL Lab | Chen Zhang (张晨) | Tsinghua University',
-             "SAIL Lab, led by Chen Zhang (张晨) in Tsinghua University's Department of Industrial Engineering, researches time-series analysis, causal inference, and industrial AI."),
+    'home': ('', 'SAIL Lab | Tsinghua University',
+             "SAIL Lab in Tsinghua University's Department of Industrial Engineering researches time-series analysis, causal inference, and industrial AI."),
     'research': ('research/', 'Research | SAIL Lab | Tsinghua University',
                  'Explore SAIL Lab research in time-series analysis, causal inference, anomaly detection, and industrial AI at Tsinghua University.'),
-    'publications': ('publications/', 'Publications | Chen Zhang & SAIL Lab | Tsinghua University',
-                     'Publications by Chen Zhang (张晨) and SAIL Lab at Tsinghua University, with authors, venues, and available paper links.'),
+    'publications': ('publications/', 'Publications | SAIL Lab | Tsinghua University',
+                     'Publications by SAIL Lab researchers at Tsinghua University, with authors, venues, and available paper links.'),
     'awards': ('awards/', 'Awards | SAIL Lab | Tsinghua University',
                'Research awards and honors received by members of SAIL Lab in the Department of Industrial Engineering at Tsinghua University.'),
-    'team': ('team/', 'Team | Chen Zhang & SAIL Lab | Tsinghua University',
-             'Meet Professor Chen Zhang (张晨), research fellows, students, research assistants, and alumni of SAIL Lab at Tsinghua University.'),
+    'team': ('team/', 'Team | SAIL Lab | Tsinghua University',
+             'Meet the faculty, research fellows, students, research assistants, and alumni of SAIL Lab at Tsinghua University.'),
     'partners': ('partners/', 'Partners | SAIL Lab | Tsinghua University',
                  'Industry partners and research collaborations of SAIL Lab in the Department of Industrial Engineering at Tsinghua University.'),
     'contact': ('contact/', 'Contact | SAIL Lab | Tsinghua University',
-                'Contact Professor Chen Zhang and SAIL Lab in the Department of Industrial Engineering, Shunde Building, Tsinghua University, Beijing.'),
+                'Contact SAIL Lab in the Department of Industrial Engineering, Shunde Building, Tsinghua University, Beijing.'),
     'opensource': ('opensource/', 'Open Source | SAIL Lab | Tsinghua University',
                    'Explore open-source research code and GitHub repositories from SAIL Lab at Tsinghua University.'),
     'chen-zhang': ('team/chen-zhang/', 'Chen Zhang (张晨) | SAIL Lab | Tsinghua University',
@@ -90,7 +90,7 @@ def metadata(document, route, title, description):
         page['mainEntity'] = {'@id': person['@id']}
     graph = [organization, {'@type': 'WebSite', '@id': BASE+'#website', 'url': BASE,
                            'name': 'SAIL Lab · Tsinghua University', 'publisher': {'@id': BASE+'#lab'}}, page]
-    if route in ('', 'team/', 'team/chen-zhang/'):
+    if route in ('team/', 'team/chen-zhang/'):
         graph.append(person)
     data = json.dumps({'@context': 'https://schema.org', '@graph': graph}, ensure_ascii=False).replace('<', '\\u003c')
     return document.replace('</head>', '<script type="application/ld+json">'+data+'</script>\n</head>')
