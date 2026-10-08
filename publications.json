@@ -1285,7 +1285,7 @@
     "abstract": "Modeling complex spatiotemporal dependencies in correlated traffic series is essential for traffic prediction. While recent works have shown improved prediction performance by using neural networks to extract spatiotemporal correlations, their effectiveness depends on the quality of the graph structures used to represent the spatial topology of the traffic network. In this work, we propose a novel approach for traffic prediction that embeds time-varying dynamic Bayesian network to capture the fine spatiotemporal topology of traffic data. We then use graph convolutional networks to generate traffic forecasts. To enable our method to efficiently model nonlinear traffic propagation patterns, we develop a deep learning-based module as a hyper-network to generate stepwise dynamic causal graphs. Our experimental results on a real traffic dataset demonstrate the superior prediction performance of the proposed method.",
     "id": "publication-34",
     "display_authors": "Junpeng Lin, Ziyue Li, Zhishuai Li, Lei Bai, Rui Zhao, Chen Zhang",
-    "category": "journals",
+    "category": "conferences",
     "topics": [
       "time-series",
       "graph-learning",
@@ -1343,7 +1343,7 @@
     "abstract": "This paper proposes to learn Multi-task, Multi-modal Direct Acyclic Graphs (MM-DAGs), which are commonly observed in complex systems, e.g., traffic, manufacturing, and weather systems, whose variables are multi-modal with scalars, vectors, and functions. This paper takes the traffic congestion analysis as a concrete case, where a traffic intersection is usually regarded as a DAG. In a road network of multiple intersections, different intersections can only have someoverlapping and distinct variables observed. For example, a signalized intersection has traffic light-related variables, whereas unsignalized ones do not. This encourages the multi-task design: with each DAG as a task, the MM-DAG tries to learn the multiple DAGs jointly so that their consensus and consistency are maximized. To this end, we innovatively propose a multi-modal regression for linear causal relationship description of different variables …",
     "id": "publication-36",
     "display_authors": "Tian Lan, Ziyue Li, Zhishuai Li, Lei Bai, Man Li, Fugee Tsung, Wolfgang Ketter, Rui Zhao, Chen Zhang",
-    "category": "journals",
+    "category": "conferences",
     "topics": [
       "statistical-modeling",
       "time-series",
@@ -1485,7 +1485,7 @@
     "abstract": "Passenger clustering based on trajectory records is essential for transportation operators. However, existing methods cannot easily cluster the passengers due to the hierarchical structure of the passenger trip information, including multiple trips within each passenger and multi-dimensional information about each trip. Furthermore, existing approaches rely on an accurate specification of the clustering number to start. Finally, existing methods do not consider spatial semantic graphs such as geographical proximity and functional similarity between the locations. In this paper, we propose a novel tensor Dirichlet Process Multinomial Mixture model with graphs, which can preserve the hierarchical structure of the multi-dimensional trip information and cluster them in a unified one-step manner with the ability to determine the number of clusters automatically. The spatial graphs are utilized in community detection to link …",
     "id": "publication-41",
     "display_authors": "Ziyue Li, Hao Yan, Chen Zhang, Wolfgang Ketter, Fugee Tsung",
-    "category": "journals",
+    "category": "conferences",
     "topics": [
       "tensor-methods",
       "machine-learning",
@@ -1602,7 +1602,7 @@
     "abstract": "System monitoring and anomaly detection is a crucial task in daily operation. With the rapid development of cyber-physical systems and IT systems, multiple sensors get involved to represent the system state from different perspectives, which inspires us to detect anomalies considering feature dependence relationship among sensors instead of focusing on individual sensor’s behavior. In this paper, we propose a novel Graph Relational Learning Network (GReLeN) to detect multivariate time series anomaly from the perspective of between-sensor dependence relationship learning. Variational AutoEncoder (VAE) serves as the overall framework for feature extraction and system representation. Graph Neural Network (GNN) and stochastic graph relational learning strategy are also imposed to capture the between-sensor dependence. Then a composite anomaly metric is established with the learned dependence structure explicitly. The experiments on four real-world datasets show our superiority in detection accuracy, anomaly diagnosis, and model interpretation.",
     "id": "publication-45",
     "display_authors": "Weiqi Zhang, Chen Zhang, Fugee Tsung",
-    "category": "journals",
+    "category": "conferences",
     "topics": [
       "anomaly-detection",
       "medical-ai",
@@ -1687,7 +1687,7 @@
     "abstract": "Time-varying dynamic Bayesian network (TVDBN) is essential for describing time-evolving directed conditional dependence structures in complex multivariate systems. In this article, we construct a TVDBN model, together with a score-based method for its structure learning. The model adopts a vector autoregressive (VAR) model to describe inter-slice and intra-slice relations between variables. By allowing VAR parameters to change segment-wisely over time, the time-varying dynamics of the network structure can be described. Furthermore, considering some external information can provide additional similarity information of variables. Graph Laplacian is further imposed to regularize similar nodes to have similar network structures. The regularized maximum a posterior estimation in the Bayesian inference framework is used as a score function for TVDBN structure evaluation, and the alternating direction method …",
     "id": "publication-48",
     "display_authors": "Xing Yang, Chen Zhang, Baihua Zheng",
-    "category": "conferences",
+    "category": "journals",
     "topics": [
       "statistical-modeling",
       "bayesian-methods",
@@ -1851,7 +1851,7 @@
     "abstract": "Passenger flow forecasting is a very critical task for the daily operations of metro system. The rapid development of deep learning methods offers us an opportunity to give an end-to-end solution to system-level prediction. However, complex spatial-temporal correlations of passenger flow data makes it quite challenging. Existing studies tend to model spatial and temporal correlations separately, which may lead to information loss and unsatisfactory prediction performance. Meanwhile, they cannot take full advantage of human knowledge and external information, such as geographical information, metro map information, etc, for modeling. To bridge the research gap, in this study, we propose a well-designed transformer based spatial-temporal fusion network (TSTFN). To cooperate with different types of external information and give additional insights, we first use multiple pre-defined graph structures to construct multi …",
     "id": "publication-53",
     "display_authors": "Weiqi Zhang, Chen Zhang, Fugee Tsung",
-    "category": "journals",
+    "category": "conferences",
     "topics": [
       "deep-learning",
       "time-series",
@@ -1879,7 +1879,7 @@
     "abstract": "This paper targets at predicting public transport in-out crowd flows of different regions together with transit flows between them in a city. The main challenge is the complex dynamic spatial correlation of crowd flows of different regions and origin-destination (OD) paths. Different from road traffic flows whose spatial correlations mainly depend on geographical distance, public transport crowd flows significantly relate to the region’s functionality and connectivity in the public transport network. Furthermore, influenced by commuters’ time-varying travel patterns, the spatial correlations change over time. Though there exist many works focusing on either predicting in-out flows or OD transit flows of different regions separately, they ignore the intimate connection between the two tasks, and hence lose efficacy. To solve these limitations in the literature, we propose a Graph spAtio dynamIc Network (GAIN) to describe the …",
     "id": "publication-55",
     "display_authors": "Bingjie He, Shukai Li, Chen Zhang, Baihua Zheng, Fugee Tsung",
-    "category": "journals",
+    "category": "conferences",
     "topics": [
       "transportation",
       "time-series",
@@ -2162,7 +2162,7 @@
     "abstract": "To better plan and schedule public transportation resources, it is crucial to understand the travel demand from any location at any time. In this article, we focus on analyzing the demand patterns for subway stations based on the tap in data at each station entrance. It has been reported that accurately predicting the arrival rates can help improve the travel experience, and prevent over-crowding in train carriages or platforms. We proposed a weighted dynamic time warping approach (WDTW) to adaptively cluster similar patterns from multiple stations. These similarities can be exploited in improving the prediction performance because spatial temporal information is better utilized. We demonstrated our approach and its effectiveness through a real data example.",
     "id": "publication-65",
     "display_authors": "Rui Wang, Nan Chen, Chen Zhang",
-    "category": "journals",
+    "category": "conferences",
     "topics": [
       "transportation",
       "machine-learning",
@@ -2266,7 +2266,7 @@
     "abstract": "In the advanced manufacturing, a lot of sensors are used to collect real-time process signals for statistical monitoring. Motivated by the complex correlation structures of these multi-channel profile signals, this paper proposes a monitoring scheme for their cross-correlations with the help of spectral network approaches. In particular, we first construct a network model for multi-channel profiles by extracting their features based on the multi-channel functional PCA. The topological structure of the network can represent the cross-correlations of multi-channel profiles. Then we propose to monitor the topological structure using its spectrum information. Numerical studies in a certain fabrication process demonstrate the applicability and efficiency of the proposed methodology.",
     "id": "publication-69",
     "display_authors": "Chen Zhang, Linmiao Zhang, Nan Chen",
-    "category": "journals",
+    "category": "conferences",
     "topics": [
       "statistical-modeling",
       "anomaly-detection",
